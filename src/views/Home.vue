@@ -1,18 +1,60 @@
 <template>
+
   <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div @click="toggleCards()">
+      <Title class="title"  />
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <template v-if="showCards === true">
+      <Carousel class="cards"  />
+    </template>
   </div>
+
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Title from "@/components/Title";
+import Carousel from "@/components/Carousel";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    HelloWorld
+    Title,
+    Carousel
+  },
+  data() {
+    return {
+      showCards: false
+    };
+  },
+  methods: {
+    toggleCards() {
+      this.showCards = !this.showCards;
+    }
   }
-}
+};
 </script>
+
+<style>
+.home {
+  height: 100%;
+}
+.title {
+  z-index: 0;
+}
+
+.cards {
+  z-index: 2;
+}
+</style>
