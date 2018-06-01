@@ -2,9 +2,8 @@
 
   <div class="home">
     <div @click="toggleCards()">
-      <Title class="title"  />
+      <Title class="title" style="z-index:0;"  />
     </div>
-    <br>
     <br>
     <br>
     <br>
@@ -16,7 +15,7 @@
     <br>
     <br>
     <template v-if="showCards === true">
-      <Carousel class="cards"  />
+      <Carousel class="cards" style="z-index:2;" />
     </template>
   </div>
 

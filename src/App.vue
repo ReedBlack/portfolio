@@ -15,8 +15,9 @@ body {
   height: 100%;
 }
 html {
-  background-image: url("/background.jpg");
+  background-image: url("/wood-background.jpg");
   background-color: #ffffe8;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
