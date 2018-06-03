@@ -4,11 +4,10 @@
     <div @click="toggleCards()">
       <Title class="title" style="z-index:0;"  />
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+  
     
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -17,6 +16,8 @@
     <template v-if="showCards === true">
       <Carousel class="cards" style="z-index:2;" />
     </template>
+    
+
   </div>
 
 </template>
@@ -25,6 +26,7 @@
 // @ is an alias to /src
 import Title from "@/components/Title";
 import Carousel from "@/components/Carousel";
+// import Footer from "@/components/Footer";
 
 export default {
   name: "home",
@@ -49,11 +51,8 @@ export default {
 .home {
   height: 100%;
 }
-.title {
-  z-index: 0;
-}
 
-.cards {
-  z-index: 2;
+.bottom {
+  bottom: 0;
 }
 </style>

@@ -5,8 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1:900|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <title>Reed Black</title>
 </head>
 
@@ -16,6 +20,23 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDnoUlxWHaLCimTAz3tdTcHnqZOi-fBNCg",
+      authDomain: "reed-black.firebaseapp.com",
+      databaseURL: "https://reed-black.firebaseio.com",
+      projectId: "reed-black",
+      storageBucket: "",
+      messagingSenderId: "198387423314"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
 </body>
 
 </html>

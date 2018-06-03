@@ -1,25 +1,71 @@
 <template>
     
     <div id="turnt">
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+             :header-text-variant="headerTextVariant"
+             :body-bg-variant="bodyBgVariant"
+             :body-text-variant="bodyTextVariant"
+             :footer-bg-variant="footerBgVariant"
+             :footer-text-variant="footerTextVariant"
+         size="lg"
+         id="modal1"
+         title="About Me"
+         >
+           <AboutMeModal />
+        </b-modal>
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+             :header-text-variant="headerTextVariant"
+             :body-bg-variant="bodyBgVariant"
+             :body-text-variant="bodyTextVariant"
+             :footer-bg-variant="footerBgVariant"
+             :footer-text-variant="footerTextVariant"
+         size="lg"
+         id="modal2"
+         >
+           <ResumeModal />
+        </b-modal>
         <carousel-3d style="height:70%;" 
-        :controls-visible="false" 
-        :height="365" 
-        :width="275" 
+        :controls-visible="true" 
+        :controls-width="76"
+        :controls-height="0"
+        :height="325" 
+        :width="255" 
         :clickable="true"
         :inverse-scaling="1300" :space="400"
         >
-            <slide v-for="(slide, i) in slides" :index="i" class="slide">
-              <figure>
-                  <img :src="slide.image">
-                  <figcaption class="description">{{slide.title}}</figcaption>
-              </figure>
-            </slide>
+          <slide :index="0" id="about" class="slide">
+            <v-btn class="hidebutton" v-b-modal.modal1>
+             <AboutMeSlide />
+            </v-btn> 
+          </slide>
+          <slide :index="1" id="resume" class="slide">
+            <v-btn class="hidebutton" v-b-modal.modal2>
+              <ResumeSlide />
+            </v-btn> 
+          </slide>
+          <slide :index="2" id="taco" class="slide">
+            <TacoSlide />
+          </slide>
+          <slide :index="3" id="music" class="slide music">
+            <MusicSlide />
+          </slide>
         </carousel-3d>
     </div>
+    
 </template>
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
+import ResumeSlide from "@/components/ResumeSlide";
+import TacoSlide from "@/components/TacoSlide";
+import MusicSlide from "@/components/MusicSlide";
+import AboutMeSlide from "@/components/AboutMeSlide";
+import Vuetify from "vuetify";
+import BootstrapVue from "bootstrap-vue";
+import AboutMeModal from "@/components/AboutMeModal";
+import ResumeModal from "@/components/ResumeModal";
 
 export default {
   name: "Carousel",
@@ -27,72 +73,94 @@ export default {
     // "carousel-3d": Carousel3d.Carousel3d,
     // slide: Carousel3d.Slide,
     Carousel3d,
-    Slide
+    Slide,
+    AboutMeSlide,
+    ResumeSlide,
+    MusicSlide,
+    TacoSlide,
+    Vuetify,
+    BootstrapVue,
+    AboutMeModal,
+    ResumeModal
   },
   data() {
     return {
-      slides: [
-        {
-          title: "ABOUT ME",
-          image: "/_MG_0747.JPG"
-        },
-        {
-          title: "RESUME",
-          image: "/Reed-Black-Resume.jpg"
-        },
-        {
-          title: "Placeholder2",
-          image: ""
-        },
-        {
-          title: "TACO TACO",
-          image: "taco-taco.png"
-        },
-        {
-          title: "MUSIC",
-          image: "/music.jpg"
-        }
-      ]
+      variants: [
+        "primary",
+        "secondary",
+        "success",
+        "warning",
+        "danger",
+        "info",
+        "light",
+        "dark"
+      ],
+      headerBgVariant: "secondary",
+      headerTextVariant: "success",
+      bodyBgVariant: "dark",
+      bodyTextVariant: "success",
+      footerBgVariant: "secondary",
+      footerTextVariant: "dark",
+      cancelDisabled: true
     };
   },
-  props: ["showCards"]
+  props: ["showCards"],
+
+  methods: {
+    onMainSlideClick() {
+      console.log("yeeeehaaaaaa");
+    }
+  }
 };
 </script>
 
 <style>
+#taco,
+#music,
+#resume,
+#about,
+.hidebutton {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 .carousel-3d-container figure {
   margin: 0;
   z-index: 5;
   padding-bottom: 60px;
+  padding: 17px;
 }
-
 .carousel-3d-container {
   padding: 30px;
   margin: 50px;
 }
-
 .carousel-3d-container figcaption {
   position: absolute;
-  background-color: #51897f;
-  color: #51897f;
-  bottom: 0;
+  margin-top: 32px;
+  margin-left: -12px;
   font-family: "Gothic A1", sans-serif;
   text-align: center;
   letter-spacing: 0.2em;
-  font-size: 19px;
-  color: #dc7971;
+  font-size: 30px;
+  font-weight: bolder;
   min-width: 100%;
   box-sizing: border-box;
   z-index: 5;
+  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  transform: rotate(5deg);
 }
 
-.slide {
-  box-shadow: 10px 10px 22px black;
-  border-image-source: url("/rope-border.png");
-  border-image-width: 450;
-  border-image-slice: 230;
-  border-image-outset: 8;
-  border-radius: 8.9%;
-  z-index: 100;
+.widen {
+  width: 90%;
+  background-color: silver;
 }
 </style>

@@ -31,8 +31,8 @@ export default {
 .raise:hover {
   font-size: 15.7v;
   transition: all 0.2s ease-in-out 0s;
-  -webkit-filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
+  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
 }
 
 h1 {
@@ -53,8 +53,8 @@ h1 {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  -webkit-filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
+  filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
   /* -webkit-text-fill-color: transparent; */
 }
 
