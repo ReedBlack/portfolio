@@ -13,24 +13,34 @@
 <style>
 .site-nav--social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-end;
   z-index: 200;
+  line-height: 23px;
   position: fixed;
-  bottom: 3;
-  right: 5;
-  margin-right: 15px;
+  bottom: 1;
+  right: 0;
+  margin-right: 10px;
   text-decoration-line: none;
   font-size: 7.5vh;
 }
 
+@media only screen and (max-width: 600px) {
+  .site-nav--social {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    padding: 2%;
+  }
+}
 a {
   text-decoration: none;
 }
 
 .fab {
   text-decoration: none;
-  padding: 22%;
+  padding: 2%;
   background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
   background-repeat: repeat-x;
   background-size: cover;

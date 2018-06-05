@@ -63,16 +63,6 @@
 }
 
 #taco-text {
-  transform: rotate(5deg);
-  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
-  background-repeat: repeat-x;
-  background-size: cover;
-  color: transparent;
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
+  bottom: 0;
 }
 </style>

@@ -7,7 +7,6 @@
   </div>
 </template>
 
-
 <script>
 import Footer from "@/components/Footer";
 

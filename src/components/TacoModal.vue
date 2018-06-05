@@ -1,0 +1,41 @@
+<template>
+    <div>
+        <header class="about-taco">
+            <h1 class="tacotext">About ¡taco taco!</h1>
+            <p class="tacotext">¡taco taco! is a light app that takes the user's "feeling" and randomly generates and combines the various building blocks of a taco recipe based on user input. If you feel like your taco night needs some inspiration, this is the app for you!</p>
+            <p class="tacotext">For future implementation I would like to customize the database to consistently return more relevant taco ingredient components, and add a database that allows users to save their favorite combinations to reference later.</p>
+        </header>
+        <img id="big-taco" src="/BigTaco.png" alt="">
+         <a href="https://taco-x-taco.firebaseapp.com/" target="blank"><b-button >Live Site</b-button></a>
+          <a href="https://github.com/ReedBlack/taco-taco" target="blank"><b-button >Github</b-button></a>
+    </div>
+</template>
+
+<style scoped>
+#big-taco {
+  height: 100%;
+  width: 100%;
+}
+
+.about-taco {
+  background: url("/wood-background.1.jpg");
+  background-size: cover;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+}
+.tacotext {
+  color: green;
+}
+
+p {
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: "Bowlby One SC", cursive !important;
+  text-align: center;
+  text-shadow: 1px 1px 1px grey;
+}
+</style>

@@ -1,34 +1,67 @@
 <template>
     
     <div id="turnt">
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-             :header-text-variant="headerTextVariant"
+         <b-modal 
+             :header-bg-variant="headerBgVariant"
+             :hide-footer="true"
              :body-bg-variant="bodyBgVariant"
              :body-text-variant="bodyTextVariant"
              :footer-bg-variant="footerBgVariant"
              :footer-text-variant="footerTextVariant"
-         size="lg"
-         id="modal1"
-         title="About Me"
-         >
+             size="lg"
+             id="modal1">
            <AboutMeModal />
         </b-modal>
          <b-modal
+            :body-close-label="close"
+            :hide-footer="true"
             :header-bg-variant="headerBgVariant"
-             :header-text-variant="headerTextVariant"
-             :body-bg-variant="bodyBgVariant"
-             :body-text-variant="bodyTextVariant"
-             :footer-bg-variant="footerBgVariant"
-             :footer-text-variant="footerTextVariant"
-         size="lg"
-         id="modal2"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+            :footer-bg-variant="footerBgVariant"
+            :footer-text-variant="footerTextVariant"
+            size="lg"
+            id="modal2"
          >
            <ResumeModal />
         </b-modal>
-        <carousel-3d style="height:70%;" 
+        <b-modal
+        :header-bg-variant="headerBgVariant"
+        :hide-footer="true"
+        :body-bg-variant="bodyBgVariant"
+        :body-text-variant="bodyTextVariant"
+        :footer-bg-variant="footerBgVariant"
+        :footer-text-variant="footerTextVariant"
+        size="lg"
+        id="modal3">
+            <TacoModal />
+        </b-modal>
+        <b-modal
+        :header-bg-variant="headerBgVariant"
+        :hide-footer="true"
+        :body-bg-variant="bodyBgVariant"
+        :body-text-variant="bodyTextVariant"
+        :footer-bg-variant="footerBgVariant"
+        :footer-text-variant="footerTextVariant"
+        size="lg"
+        id="modal4">
+           <LivewyreModal />
+        </b-modal>
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+            :footer-bg-variant="footerBgVariant"
+            :footer-text-variant="footerTextVariant"
+         size="lg"
+         id="modal5"
+         >
+           <MusicModal />
+        </b-modal>
+        <carousel-3d id="shorter" style="height:70%;" 
         :controls-visible="true" 
-        :controls-width="76"
+        :controls-width="60"
         :controls-height="0"
         :height="325" 
         :width="255" 
@@ -46,14 +79,23 @@
             </v-btn> 
           </slide>
           <slide :index="2" id="taco" class="slide">
-            <TacoSlide />
+            <v-btn class="hidebutton" v-b-modal.modal3>
+              <TacoSlide />
+            </v-btn>
           </slide>
-          <slide :index="3" id="music" class="slide music">
-            <MusicSlide />
+          <slide :index="3" id="live" class="slide">
+            <v-btn class="hidebutton" v-b-modal.modal4>
+              <LivewyreSlide />
+            </v-btn>
+          </slide>
+          <slide :index="4" id="music" class="slide music">
+            <v-btn class="hidebutton" v-b-modal.modal5>
+
+              <MusicSlide />
+            </v-btn>
           </slide>
         </carousel-3d>
     </div>
-    
 </template>
 
 <script>
@@ -62,10 +104,13 @@ import ResumeSlide from "@/components/ResumeSlide";
 import TacoSlide from "@/components/TacoSlide";
 import MusicSlide from "@/components/MusicSlide";
 import AboutMeSlide from "@/components/AboutMeSlide";
-import Vuetify from "vuetify";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import ResumeModal from "@/components/ResumeModal";
+import MusicModal from "@/components/MusicModal";
+import TacoModal from "@/components/TacoModal";
+import LivewyreModal from "@/components/LivewyreModal";
+import LivewyreSlide from "@/components/LivewyreSlide";
 
 export default {
   name: "Carousel",
@@ -78,10 +123,13 @@ export default {
     ResumeSlide,
     MusicSlide,
     TacoSlide,
-    Vuetify,
     BootstrapVue,
     AboutMeModal,
-    ResumeModal
+    ResumeModal,
+    TacoModal,
+    LivewyreSlide,
+    LivewyreModal,
+    MusicModal
   },
   data() {
     return {
@@ -95,7 +143,7 @@ export default {
         "light",
         "dark"
       ],
-      headerBgVariant: "secondary",
+      headerBgVariant: "dark",
       headerTextVariant: "success",
       bodyBgVariant: "dark",
       bodyTextVariant: "success",
@@ -103,13 +151,6 @@ export default {
       footerTextVariant: "dark",
       cancelDisabled: true
     };
-  },
-  props: ["showCards"],
-
-  methods: {
-    onMainSlideClick() {
-      console.log("yeeeehaaaaaa");
-    }
   }
 };
 </script>
@@ -119,10 +160,15 @@ export default {
 #music,
 #resume,
 #about,
+#live,
 .hidebutton {
   background: none;
   border: none;
   box-shadow: none;
+}
+
+#shorter {
+  width: 95%;
 }
 .carousel-3d-container figure {
   margin: 0;
@@ -162,5 +208,9 @@ export default {
 .widen {
   width: 90%;
   background-color: silver;
+}
+
+figure:hover {
+  margin-top: 10px;
 }
 </style>

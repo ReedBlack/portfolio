@@ -1,33 +1,29 @@
 <template>
-  <div class="title">
-    <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
-      <h3>contact</h3>
-    </a>
-    <div class="ferns">
-      <img class="fern-cover three three-show" src="/fern3.png" alt="">
-    </div>
-    <h1 class="raise">Reed Black</h1>
+  <div class="title"  >
+    <router-link class="nostyle" to="/">
+      <h3>home</h3>
+    </router-link>
+    <h1 class="raise">Contact Reed</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Title"
+  name: "Title",
+  props: ["showCards"],
+  methods: {}
 };
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @media only screen and (max-width: 600px) {
   .three {
     display: none;
   }
-}
-@media only screen and (max-width: 800px) {
+
   h1 {
-    font-size: 14.9vw !important;
-  }
-  h3 {
-    font-size: 3vh;
+    font-size: 15.9vw !important;
   }
 }
 .raise:hover {
@@ -54,9 +50,9 @@ h3 {
 }
 h1 {
   font-family: "Bowlby One SC", cursive;
-  margin-top: 52px;
+  margin-top: 45px;
   font-weight: bold;
-  font-size: 15.9vh;
+  font-size: 11.9vh;
   letter-spacing: 0.04vw;
   text-align: center;
   position: absolute;
@@ -72,6 +68,7 @@ h1 {
   background-clip: text;
   -webkit-filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
   filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .fern-cover {
@@ -113,7 +110,7 @@ h1 {
   height: 45%;
 }
 
-a:hover {
+.nostyle {
   text-decoration: none;
 }
 </style>

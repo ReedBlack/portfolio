@@ -1,15 +1,41 @@
 <template>
-    <div>
-    <h1>An artist at heart</h1>
+<div class="water">
+    <h1>Evolving - Just as Technology Does</h1>
     <p>My passion has always lied in creativity. Creative outlets and expression are the keys to my happiness. After many years honing my service chops, I realized it was time to enter a field where I could be creative not only on my free time, but also on the job. While the recording industry provided this for me for some time, I felt it was too similar to my away-from-work hobby. Expansion, I decided, was the key to a more fulfilling life. 
 <br><br>
-It was upon this revelation that I decided to become a developer. I have found that the creative chops I learned in the studio have benefitted my ability to solve problems with code. On the flip-side, the difficult methods I've learned with code have inspired me to take a more cerebral, methodical approach to making music. 
-<br><br>
-I am currently a student of the Galvanize Full Stack Development program. I love to build from scratch, but I also enjoy editing code to make it function the way you need. In the coming months I will be on the hunt for a job in the greater Denver or Chicago areas to meet your needs for front and/or back end development. I have learned that little in life is more satisfying than the learning process, and plan to continue self-educating long after my graduation. As such, I'd be excited to work for a company who's language requirements may not be those I'm currently fluent with. I'm especially interested in companies that deal with music in any way, shape, or fashion. 
+It was upon this revelation that I decided to become a developer. I have found that the creative chops I learned in the studio have benefitted my ability to solve problems with code. On the flip-side, the difficult methods I've learned with code have inspired me to take a more cerebral, methodical approach to making music. I'm currently finishing up my curriculem at Galvanize and looking to find the right fit on the other side.
 <br><br>
 Aside from producing and coding, I'm a DJ. For fun I love to cook, ski, camp, hike, practice yoga, and learn about all things tech. If you're looking to add a creative spark to your development team, please reach out!</p>
 </div>
 </template>
 
-<style>
+<style scoped>
+p {
+  font-weight: bold;
+  color: black;
+}
+
+h1,
+h2 {
+  font-family: "Bowlby One SC", cursive !important;
+  text-align: center;
+  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+}
+
+.water {
+  background: url("/wood-background.1.jpg");
+  background-size: cover;
+  border: none;
+  padding: 10px;
+  margin: 0;
+}
 </style>

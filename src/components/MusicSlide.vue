@@ -14,4 +14,8 @@ export default {};
   -webkit-filter: drop-shadow(5px 5px 4px #222);
   filter: drop-shadow(5px 5px 4px #222);
 }
+
+#muzak {
+  bottom: 0;
+}
 </style>
