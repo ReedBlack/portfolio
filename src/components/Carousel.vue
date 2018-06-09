@@ -156,9 +156,13 @@ export default {
 </script>
 
 <style>
+#shorter {
+  width: 85%;
+}
 @media only screen and (max-width: 600px) {
   #shorter {
     margin-top: -20px;
+    width: 100%;
   }
 }
 #taco,
@@ -172,9 +176,6 @@ export default {
   box-shadow: none;
 }
 
-#shorter {
-  width: 95%;
-}
 .carousel-3d-container figure {
   margin: 0;
   z-index: 5;

@@ -7,7 +7,6 @@ import {
 } from "vue-carousel-3d"
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'vuetify/dist/vuetify.min.css'
 
 Vue.use(BootstrapVue);
 

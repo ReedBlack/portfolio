@@ -13,7 +13,8 @@ import Footer from "@/components/Footer";
 export default {
   components: {
     Footer
-  }
+  },
+  methods: {}
 };
 </script>
 
@@ -29,6 +30,11 @@ export default {
   margin-left: 0;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  #dirtlayer {
+    background: none;
+  }
 }
 
 #app {

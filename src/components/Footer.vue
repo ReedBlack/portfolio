@@ -16,13 +16,13 @@
   flex-direction: column;
   justify-content: flex-end;
   z-index: 200;
-  line-height: 23px;
+  line-height: 12px;
   position: fixed;
   bottom: 1;
   right: 0;
   margin-right: 10px;
   text-decoration-line: none;
-  font-size: 7.5vh;
+  font-size: 7vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -31,7 +31,7 @@
     flex-direction: row;
   }
   a {
-    padding: 2%;
+    padding: 2.5%;
   }
 }
 a {

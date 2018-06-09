@@ -2,6 +2,23 @@
 <html>
 
 <head>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -10,33 +27,70 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1:900|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
-  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
   <title>Reed Black</title>
+  <style>
+    .fullscreenLoader {
+      max-width: 100%;
+      max-height: 100%;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      overflow: auto;
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+
+
+    .fullscreenDiv {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
   <noscript>
     <strong>We're sorry but portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
   </noscript>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
-  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDnoUlxWHaLCimTAz3tdTcHnqZOi-fBNCg",
-      authDomain: "reed-black.firebaseapp.com",
-      databaseURL: "https://reed-black.firebaseio.com",
-      projectId: "reed-black",
-      storageBucket: "",
-      messagingSenderId: "198387423314"
-    };
-    firebase.initializeApp(config);
-  </script>
-  <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
-  <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+  <div id="app">
+    <img src="loading.gif" class="fullscreenLoader" v-show="loading" />
+    <!-- CONTENT -->
+    <div v-show="!loading" class="fullscreenDiv" style="display: none;">
+    </div>
+    <!-- built files will be auto injected -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDnoUlxWHaLCimTAz3tdTcHnqZOi-fBNCg",
+        authDomain: "reed-black.firebaseapp.com",
+        databaseURL: "https://reed-black.firebaseio.com",
+        projectId: "reed-black",
+        storageBucket: "",
+        messagingSenderId: "198387423314"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+      setTimeout(function () {
+        new Vue({
+          el: '#myPage',
+          data: {
+            loading: true,
+          },
+          created: function () {
+            this.loading = false;
+          }
+        });
+      }, 1500);
+    </script>
 </body>
 
 </html>
