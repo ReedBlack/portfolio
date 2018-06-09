@@ -156,6 +156,11 @@ export default {
 </script>
 
 <style>
+@media only screen and (max-width: 600px) {
+  #shorter {
+    margin-top: -20px;
+  }
+}
 #taco,
 #music,
 #resume,

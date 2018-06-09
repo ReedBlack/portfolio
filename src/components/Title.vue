@@ -25,6 +25,7 @@ export default {
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 14.9vw !important;
+    margin-top: 28px !important;
   }
   h3 {
     font-size: 3vh;

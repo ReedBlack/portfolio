@@ -2,8 +2,6 @@
     <figure>
           <img id="oval" src="/Reed-Black-Resume.jpg">
           <figcaption class="description" id="titleresume">resume</figcaption>
-
-
     </figure>
  </template>
 
