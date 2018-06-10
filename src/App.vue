@@ -43,8 +43,6 @@ export default {
 
   background-image: url("/wood-background.jpg");
   position: fixed;
-
-  background-color: #ffffe8;
   background-size: cover;
 }
 .footer {

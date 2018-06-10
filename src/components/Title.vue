@@ -40,7 +40,7 @@ export default {
 
 h3 {
   font-family: "Bowlby One SC", cursive;
-  width: 130px;
+  width: 145px;
   margin-top: -27px;
   margin-left: 18px;
   font-size: 4vh;
