@@ -61,7 +61,7 @@
         </b-modal>
         <carousel-3d id="shorter" style="height:70%;" 
         :controls-visible="true" 
-        :controls-width="60"
+        :controls-width="80"
         :controls-height="0"
         :height="325" 
         :width="255" 
@@ -69,30 +69,30 @@
         :inverse-scaling="1300" :space="400"
         >
           <slide :index="0" id="about" class="slide">
-            <v-btn class="hidebutton" v-b-modal.modal1>
+            <div class="hidebutton" v-b-modal.modal1>
              <AboutMeSlide />
-            </v-btn> 
+            </div> 
           </slide>
           <slide :index="1" id="resume" class="slide">
-            <v-btn class="hidebutton" v-b-modal.modal2>
+            <div class="hidebutton" v-b-modal.modal2>
               <ResumeSlide />
-            </v-btn> 
+            </div> 
           </slide>
           <slide :index="2" id="taco" class="slide">
-            <v-btn class="hidebutton" v-b-modal.modal3>
+            <div class="hidebutton" v-b-modal.modal3>
               <TacoSlide />
-            </v-btn>
+            </div>
           </slide>
           <slide :index="3" id="live" class="slide">
-            <v-btn class="hidebutton" v-b-modal.modal4>
+            <div class="hidebutton" v-b-modal.modal4>
               <LivewyreSlide />
-            </v-btn>
+            </div>
           </slide>
           <slide :index="4" id="music" class="slide music">
-            <v-btn class="hidebutton" v-b-modal.modal5>
+            <div class="hidebutton" v-b-modal.modal5>
 
               <MusicSlide />
-            </v-btn>
+            </div>
           </slide>
         </carousel-3d>
     </div>
@@ -156,12 +156,16 @@ export default {
 </script>
 
 <style>
+#style-override span {
+  font-size: 80px;
+}
+
 #shorter {
   width: 85%;
 }
 @media only screen and (max-width: 600px) {
   #shorter {
-    margin-top: -20px;
+    margin-top: -70px;
     width: 100%;
   }
 }

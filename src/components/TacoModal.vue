@@ -2,8 +2,8 @@
     <div>
         <header class="about-taco">
             <h1 class="tacotext">About ¡taco taco!</h1>
-            <p class="tacotext">¡taco taco! is a light app that takes the user's "feeling" and randomly generates and combines the various building blocks of a taco recipe based on user input. If you feel like your taco night needs some inspiration, this is the app for you!</p>
-            <p class="tacotext">For future implementation I would like to customize the database to consistently return more relevant taco ingredient components, and add a database that allows users to save their favorite combinations to reference later.</p>
+            <p class="tacotext">Let's be honest here...it's not the flashiest site you've ever seen, but I took the cutest taco drawing on the interwebs and I made it spin. Don't think about the programming, just look at the taco. Look at it!!! <br> Anyhow...¡taco taco! is a light app that takes the user's "feeling" and randomly generates and combines the various building blocks of a taco recipe based on user input. If you feel like your taco night needs some inspiration, give this a whirl.</p>
+            <p class="tacotext">Technologies used: VueJS, HTML5, CSS</p>
         </header>
         <img id="big-taco" src="/BigTaco.png" alt="">
          <a href="https://taco-x-taco.firebaseapp.com/" target="blank"><b-button >Live Site</b-button></a>

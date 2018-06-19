@@ -15,12 +15,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
   z-index: 200;
   line-height: 12px;
   position: fixed;
   bottom: 1;
   right: 0;
-  margin-right: 10px;
+  margin-right: 12px;
   text-decoration-line: none;
   font-size: 7vh;
 }
@@ -29,6 +30,8 @@
   .site-nav--social {
     display: flex;
     flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   a {
     padding: 2.5%;

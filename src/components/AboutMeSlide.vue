@@ -1,5 +1,5 @@
  <template>
-    <figure>
+    <figure id="hide-bg">
                 
         <img id="photo" src="/me.jpg">
         <figcaption id="me" class="description">about me</figcaption>
@@ -7,7 +7,7 @@
     </figure>
  </template>
 
- <style>
+ <style scoped>
 #photo {
   border: none;
   background: none;

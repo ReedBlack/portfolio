@@ -14,14 +14,14 @@
     <template>
       <Carousel class="cards" style="z-index:2;" />
     </template>
-    
+    <Footer class="bottom" />
 
   </div>
 
 </template>
 
 <script>
-// @ is an alias to /src
+import Footer from "@/components/Footer";
 import Title from "@/components/Title";
 import Carousel from "@/components/Carousel";
 
@@ -29,7 +29,8 @@ export default {
   name: "home",
   components: {
     Title,
-    Carousel
+    Carousel,
+    Footer
   }
 };
 </script>
