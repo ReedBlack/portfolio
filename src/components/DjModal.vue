@@ -82,7 +82,7 @@ export default {
   display: block;
   height: 25%;
   margin-left: -400px;
-  font-size: 5vh;
+  font-size: 4.5vh;
   margin-right: 5px;
 }
 

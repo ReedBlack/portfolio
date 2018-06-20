@@ -23,7 +23,6 @@
   border: none;
   padding: 10px;
   margin: 5px;
-  -webkit-font-smoothing: antialiased;
 }
 .tacotext {
   color: green;

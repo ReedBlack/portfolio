@@ -1,6 +1,18 @@
 <template>
     
     <div id="turnt">
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+            :footer-bg-variant="footerBgVariant"
+            :footer-text-variant="footerTextVariant"
+         size="lg"
+         id="modal5"
+         >
+           <MusicInfoModal />
+        </b-modal>
          <b-modal 
              :header-bg-variant="headerBgVariant"
              :hide-footer="true"
@@ -13,14 +25,12 @@
            <IndyModal />
         </b-modal>
          <b-modal
-            :body-close-label="close"
-            :hide-footer="true"
             :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
             :body-text-variant="bodyTextVariant"
-            :footer-bg-variant="footerBgVariant"
             
-            size="lg"
+            size="sm"
             id="modal2"
          >
            <DevNavModal />
@@ -46,18 +56,6 @@
         size="lg"
         id="modal4">
            <DjModal />
-        </b-modal>
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-            :hide-footer="true"
-            :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"
-            :footer-bg-variant="footerBgVariant"
-            :footer-text-variant="footerTextVariant"
-         size="lg"
-         id="modal5"
-         >
-           <MusicInfoModal />
         </b-modal>
         <carousel-3d id="music-c" style="height:70%;" 
         :controls-visible="true" 
@@ -90,7 +88,6 @@
           </slide>
           <slide :index="4" id="music" class="slide music">
             <div class="hidebutton" v-b-modal.modal5>
-
               <MusicSlideM />
             </div>
           </slide>
@@ -111,15 +108,12 @@ import DjModal from "@/components/DjModal";
 import IndyModal from "@/components/IndyModal";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
-import ResumeModal from "@/components/ResumeModal";
 import MusicInfoModal from "@/components/MusicInfoModal";
 import StudioModal from "@/components/StudioModal";
 
 export default {
   name: "Carousel",
   components: {
-    // "carousel-3d": Carousel3d.Carousel3d,
-    // slide: Carousel3d.Slide,
     Carousel3d,
     Slide,
     SoloSlide,
@@ -127,7 +121,6 @@ export default {
     MusicSlideM,
     StudioSlide,
     BootstrapVue,
-    AboutMeModal,
     MDev,
     DjModal,
     IndyModal,
@@ -176,7 +169,11 @@ export default {
   width: 90%;
   margin-top: -1%;
 }
-.slide,
+#ableton,
+#DJ,
+#solo-cuts,
+#dev,
+#studio-cuts,
 .hidebutton {
   background: none;
   border: none;

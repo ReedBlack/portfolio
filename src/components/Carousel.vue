@@ -6,8 +6,6 @@
              :hide-footer="true"
              :body-bg-variant="bodyBgVariant"
              :body-text-variant="bodyTextVariant"
-             :footer-bg-variant="footerBgVariant"
-             :footer-text-variant="footerTextVariant"
              size="lg"
              id="modal1">
            <AboutMeModal />
@@ -18,8 +16,6 @@
             :header-bg-variant="headerBgVariant"
             :body-bg-variant="bodyBgVariant"
             :body-text-variant="bodyTextVariant"
-            :footer-bg-variant="footerBgVariant"
-            :footer-text-variant="footerTextVariant"
             size="lg"
             id="modal2"
          >
@@ -30,8 +26,6 @@
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
         :body-text-variant="bodyTextVariant"
-        :footer-bg-variant="footerBgVariant"
-        :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal3">
             <TacoModal />
@@ -41,8 +35,6 @@
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
         :body-text-variant="bodyTextVariant"
-        :footer-bg-variant="footerBgVariant"
-        :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal4">
            <LivewyreModal />
@@ -52,9 +44,7 @@
             :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
             :body-text-variant="bodyTextVariant"
-            :footer-bg-variant="footerBgVariant"
-            :footer-text-variant="footerTextVariant"
-         size="lg"
+         size="sm"
          id="modal5"
          >
            <MusicModal />

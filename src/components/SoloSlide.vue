@@ -20,6 +20,8 @@ export default {};
   -webkit-filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   margin-top: 15px;
+  background: none;
+  border: none;
 }
 
 #solo {

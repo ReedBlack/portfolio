@@ -15,6 +15,7 @@
 #livewyre {
   height: 100%;
   width: 100%;
+  margin-bottom: 3px;
 }
 
 .livetext {
@@ -29,10 +30,6 @@
 
 a {
   margin: 3px;
-}
-
-p {
-  -webkit-font-smoothing: antialiased;
 }
 
 h1,

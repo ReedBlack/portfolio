@@ -11,10 +11,8 @@ Aside from producing and coding, I'm a DJ. For fun I love to cook, ski, camp, hi
 
 <style scoped>
 p {
-  -webkit-font-smoothing: antialiased;
   color: black;
 }
-
 h1,
 h2 {
   font-family: "Bowlby One SC", cursive !important;

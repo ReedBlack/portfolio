@@ -32,7 +32,6 @@
   background: url("/record.jpg");
   background-size: cover;
   padding: 4px;
-  -webkit-font-smoothing: antialiased;
 }
 hr {
   background-color: silver;
