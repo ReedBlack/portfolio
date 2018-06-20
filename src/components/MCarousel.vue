@@ -9,8 +9,8 @@
              :footer-bg-variant="footerBgVariant"
              :footer-text-variant="footerTextVariant"
              size="lg"
-             id="modal1">
-           <AboutMeModal />
+             id="modal7">
+           <IndyModal />
         </b-modal>
          <b-modal
             :body-close-label="close"
@@ -34,7 +34,7 @@
         :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal3">
-            <TacoModal />
+            <StudioModal />
         </b-modal>
         <b-modal
         :header-bg-variant="headerBgVariant"
@@ -45,7 +45,7 @@
         :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal4">
-           <LivewyreModal />
+           <DjModal />
         </b-modal>
          <b-modal
             :header-bg-variant="headerBgVariant"
@@ -69,7 +69,7 @@
         :inverse-scaling="1300" :space="400"
         >
           <slide :index="0" id="solo-cuts" class="slide">
-            <div class="hidebutton" v-b-modal.modal1>
+            <div class="hidebutton" v-b-modal.modal7>
              <SoloSlide />
             </div> 
           </slide>
@@ -107,14 +107,13 @@ import SoloSlide from "@/components/SoloSlide";
 import MDev from "@/components/MDev";
 import DevNavModal from "@/components/DevNavModal";
 import DJSlide from "@/components/DJSlide";
-
+import DjModal from "@/components/DjModal";
+import IndyModal from "@/components/IndyModal";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import ResumeModal from "@/components/ResumeModal";
-import MusicInfoModal from "@/components/MusicModal";
-import TacoModal from "@/components/TacoModal";
-import LivewyreModal from "@/components/LivewyreModal";
-import LivewyreSlide from "@/components/LivewyreSlide";
+import MusicInfoModal from "@/components/MusicInfoModal";
+import StudioModal from "@/components/StudioModal";
 
 export default {
   name: "Carousel",
@@ -130,9 +129,9 @@ export default {
     BootstrapVue,
     AboutMeModal,
     MDev,
-    TacoModal,
-    LivewyreSlide,
-    LivewyreModal,
+    DjModal,
+    IndyModal,
+    StudioModal,
     MusicInfoModal,
     DevNavModal
   },
@@ -202,5 +201,12 @@ export default {
 
 figure:hover {
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #music-c {
+    margin-top: -70px;
+    width: 100%;
+  }
 }
 </style>

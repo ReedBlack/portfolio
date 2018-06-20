@@ -1,6 +1,6 @@
  <template>
     <figure>           
-        <img id="studio" src="/protools 2.png">
+        <img id="studio" src="/faders.png">
         <figcaption id="solo" class="description">studio cuts</figcaption>
     </figure>
  </template>

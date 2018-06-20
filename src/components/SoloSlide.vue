@@ -1,6 +1,6 @@
 <template>
     <figure id="hide-bg">           
-        <img id="ableton" src="/ableton 2.png">
+        <img id="ableton" src="/keys.png">
         <figcaption id="solo" class="description">indy cuts</figcaption>
     </figure>
 </template>
@@ -19,7 +19,7 @@ export default {};
 #ableton {
   -webkit-filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
-  margin-top: 55px;
+  margin-top: 15px;
 }
 
 #solo {

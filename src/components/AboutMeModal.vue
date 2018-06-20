@@ -11,7 +11,7 @@ Aside from producing and coding, I'm a DJ. For fun I love to cook, ski, camp, hi
 
 <style scoped>
 p {
-  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
   color: black;
 }
 

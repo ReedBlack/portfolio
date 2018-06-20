@@ -10,7 +10,7 @@
 
 <style scoped>
 .wood {
-  background: url("/wood-background.1.jpg");
+  background: url("wood-background.1.jpg");
   background-size: cover;
   padding: 10px;
   display: flex;

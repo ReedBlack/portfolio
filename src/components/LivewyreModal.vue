@@ -27,8 +27,12 @@
   margin: 5px;
 }
 
+a {
+  margin: 3px;
+}
+
 p {
-  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,

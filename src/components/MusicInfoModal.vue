@@ -31,14 +31,11 @@
 .record {
   background: url("/record.jpg");
   background-size: cover;
-  padding: 10px;
+  padding: 4px;
+  -webkit-font-smoothing: antialiased;
 }
 hr {
   background-color: silver;
-}
-
-p {
-  font-weight: bold;
 }
 
 h1,

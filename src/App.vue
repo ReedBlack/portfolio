@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="dirtlayer">
+   
       <router-view/>
       
-    </div>
+    
   </div>
 </template>
 

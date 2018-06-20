@@ -1,6 +1,6 @@
  <template>
     <figure id="hide-bg">           
-        <img id="record" src="/serato 2.png">
+        <img id="record" src="/circle3.png">
         <figcaption id="solo" class="description">dj mixes</figcaption>
     </figure>
  </template>

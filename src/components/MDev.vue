@@ -17,6 +17,7 @@ export default {};
   color: black;
   font-weight: bold;
   text-align: center;
+  margin-left: -18px;
 }
 
 #solo {

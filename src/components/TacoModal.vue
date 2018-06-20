@@ -18,18 +18,19 @@
 }
 
 .about-taco {
-  background: url("/wood-background.1.jpg");
+  background: silver;
   background-size: cover;
   border: none;
   padding: 10px;
   margin: 5px;
+  -webkit-font-smoothing: antialiased;
 }
 .tacotext {
   color: green;
 }
 
 p {
-  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
