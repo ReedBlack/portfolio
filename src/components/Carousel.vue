@@ -49,6 +49,16 @@
          >
            <MusicModal />
         </b-modal>
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+         size="lg"
+         id="modal6"
+         >
+           <MixtapModal />
+        </b-modal>
         <carousel-3d id="shorter" style="height:70%;" 
         :controls-visible="true" 
         :controls-width="80"
@@ -84,6 +94,12 @@
               <MusicSlide />
             </div>
           </slide>
+          <slide :index="5" id="mixtap" class="slide">
+            <div class="hidebutton" v-b-modal.modal6>
+
+              <MixtapSlide />
+            </div>
+          </slide>
         </carousel-3d>
     </div>
 </template>
@@ -101,6 +117,8 @@ import MusicModal from "@/components/MusicModal";
 import TacoModal from "@/components/TacoModal";
 import LivewyreModal from "@/components/LivewyreModal";
 import LivewyreSlide from "@/components/LivewyreSlide";
+import MixtapSlide from "@/components/MixtapSlide";
+import MixtapModal from "@/components/MixtapModal";
 
 export default {
   name: "Carousel",
@@ -119,7 +137,9 @@ export default {
     TacoModal,
     LivewyreSlide,
     LivewyreModal,
-    MusicModal
+    MusicModal,
+    MixtapSlide,
+    MixtapModal
   },
   data() {
     return {
@@ -164,6 +184,7 @@ export default {
 #resume,
 #about,
 #live,
+#mixtap,
 .hidebutton {
   background: none;
   border: none;

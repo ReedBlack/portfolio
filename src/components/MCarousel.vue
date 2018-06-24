@@ -18,8 +18,6 @@
              :hide-footer="true"
              :body-bg-variant="bodyBgVariant"
              :body-text-variant="bodyTextVariant"
-             :footer-bg-variant="footerBgVariant"
-             :footer-text-variant="footerTextVariant"
              size="lg"
              id="modal7">
            <IndyModal />
@@ -28,8 +26,7 @@
             :header-bg-variant="headerBgVariant"
             :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"
-            
+            :body-text-variant="bodyTextVariant"   
             size="sm"
             id="modal2"
          >
@@ -40,8 +37,6 @@
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
         :body-text-variant="bodyTextVariant"
-        :footer-bg-variant="footerBgVariant"
-        :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal3">
             <StudioModal />
@@ -51,8 +46,6 @@
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
         :body-text-variant="bodyTextVariant"
-        :footer-bg-variant="footerBgVariant"
-        :footer-text-variant="footerTextVariant"
         size="lg"
         id="modal4">
            <DjModal />
