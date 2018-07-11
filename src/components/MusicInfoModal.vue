@@ -45,6 +45,9 @@ h2 {
   text-shadow: 1px 1px 1px grey;
 }
 
+p {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
 h1,
 h2,
 p {

@@ -52,13 +52,7 @@
             </div> 
             <h3 class="mix-date-loc">2015</h3>
         </li>    
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Flutes for the Fearless</h1>
-                <audio :src="flutes" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">Feat. Hijara 2014</h3>
-        </li>
+       
     </ul>
       
  </div>
@@ -80,9 +74,7 @@ export default {
       marbleAnimal:
         "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Marble+Animal.m4a",
       bigfoot:
-        "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Bigfoot.m4a",
-      flutes:
-        "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/02+Flutes+for+the+Fearless.m4a"
+        "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Bigfoot.m4a"
     };
   }
 };

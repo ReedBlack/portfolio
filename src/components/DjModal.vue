@@ -4,6 +4,13 @@
     <ul>
         <li class="player">
             <div class=title-audio>
+                <h1 class="mix-title">That Funk Noise</h1>
+                <audio :src="emilys2017" controls></audio>
+            </div> 
+            <h3 class="mix-date-loc">Somewhere Dirty</h3>
+        </li>
+        <li class="player">
+            <div class=title-audio>
                 <h1 class="mix-title">Feed the Fish</h1>
                 <audio :src="punchHouse2016" controls></audio>
             </div> 
@@ -15,13 +22,6 @@
                 <audio :src="cettasSat2016" controls></audio>
             </div> 
             <h3 class="mix-date-loc">@Cetta's, October 2016</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Chillin' on a Sunday</h1>
-                <audio :src="emilys2017" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">Emily's, Sept 2016</h3>
         </li>
         <li class="player">
             <div class=title-audio>
@@ -61,14 +61,23 @@ export default {
 </script>
 
 <style>
-.mix-title,
-.mix-date-loc {
+.mix-title {
   font-family: "Mr Dafoe", cursive;
 
   color: rgb(1, 200, 194);
   -webkit-font-smoothing: antialiased;
-  -webkit-filter: drop-shadow(1px 1px 1px rgb(255, 0, 255));
-  filter: drop-shadow(1px 1px 1px rgb(255, 0, 255));
+  -webkit-filter: drop-shadow(0px 0px 1px rgb(255, 0, 255));
+  filter: drop-shadow(0px 0px 1px rgb(255, 0, 255));
+}
+
+.mix-date-loc {
+  color: rgb(1, 200, 194);
+  -webkit-font-smoothing: antialiased;
+  -webkit-filter: drop-shadow(0px 1px 0px rgb(255, 0, 255));
+  filter: drop-shadow(0px 1px 0px rgb(255, 0, 255));
+  margin-left: -400px;
+  font-size: 3.4vh;
+  margin-right: 5px;
 }
 #ddown-sm {
   color: hotpink;
@@ -76,14 +85,6 @@ export default {
 
 .mix-title {
   font-size: 6vh;
-}
-
-.mix-date-loc {
-  display: block;
-  height: 25%;
-  margin-left: -400px;
-  font-size: 4.5vh;
-  margin-right: 5px;
 }
 
 .player:hover,
@@ -98,31 +99,20 @@ export default {
 }
 
 audio {
-  width: 450px;
+  width: 375px;
   margin-bottom: 0;
-  -webkit-transition: all 0.11s linear;
-  -moz-transition: all 0.11s linear;
-  -o-transition: all 0.11s linear;
-  transition: all 0.11s linear;
-  -moz-box-shadow: 2px 2px 4px 0px #006773;
-  -webkit-box-shadow: 2px 2px 4px 0px #006773;
-  box-shadow: 2px 2px 4px 0px #006773;
-  -moz-border-radius: 7px 7px 7px 7px;
-  -webkit-border-radius: 7px 7px 7px 7px;
-  border-radius: 7px 7px 7px 7px;
 }
 .player {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid gray;
-  margin-top: -3%;
-  margin-left: -3%;
+  margin-top: 1%;
+  margin-left: -1%;
   border-radius: 6px;
   padding: 1%;
-  width: 95%;
-  margin: 10px;
-  background: #fef6fe; /* Old browsers */
+  width: 96%;
+  background: #291829; /* Old browsers */
   background: -moz-linear-gradient(
     -45deg,
     hsla(300, 80%, 98%, 1) 4%,
@@ -157,20 +147,19 @@ audio {
   border-radius: 7px 7px 7px 7px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   audio {
-    width: 265px;
+    width: 100%;
   }
 
   .player {
-    width: 122%;
+    width: 118%;
     height: 35%;
-    margin: 2px;
-    padding: 2%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: -42px;
+    margin-left: -48px;
   }
 
   .title-audio {

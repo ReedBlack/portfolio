@@ -17,4 +17,7 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+#description {
+  bottom: 0;
+}
 </style>

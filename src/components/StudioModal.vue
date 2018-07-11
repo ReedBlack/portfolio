@@ -1,6 +1,7 @@
 
 <template>
   <div>
+    <small id="silver">All tracks recorded and produced at Stonecutter Recording Studios, Chicago, IL</small>
     <ul>
         <li class="player">
             <div class=title-audio>
@@ -59,3 +60,9 @@ export default {
   }
 };
 </script>
+
+<style>
+#silver {
+  color: silver;
+}
+</style>

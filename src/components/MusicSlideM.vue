@@ -24,7 +24,7 @@ export default {};
   -webkit-font-smoothing: antialiased;
   margin-left: -12px;
   margin-bottom: 15px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
   letter-spacing: 0.2em;
   font-size: 32px;

@@ -78,14 +78,14 @@
               <ResumeSlide />
             </div> 
           </slide>
-          <slide :index="2" id="taco" class="slide">
-            <div class="hidebutton" v-b-modal.modal3>
-              <TacoSlide />
-            </div>
-          </slide>
-          <slide :index="3" id="live" class="slide">
+          <slide :index="2" id="live" class="slide">
             <div class="hidebutton" v-b-modal.modal4>
               <LivewyreSlide />
+            </div>
+          </slide>
+          <slide :index="3" id="taco" class="slide">
+            <div class="hidebutton" v-b-modal.modal3>
+              <TacoSlide />
             </div>
           </slide>
           <slide :index="4" id="music" class="slide music">
@@ -205,7 +205,7 @@ export default {
   position: absolute;
   margin-top: 32px;
   margin-left: -12px;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
   letter-spacing: 0.2em;
   font-size: 30px;

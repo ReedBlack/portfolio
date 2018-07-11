@@ -1,8 +1,8 @@
  <template>
     <figure>
                 
-        <img id="poster" src="/gramatik.jpg">
-        <figcaption class="description" id="live-text">LiveWyre</figcaption>
+        <img id="poster" src="/livewire.png">
+        <figcaption class="description" id="live-text">livewire</figcaption>
 
     </figure>
  </template>

@@ -1,8 +1,6 @@
 <template>
     <div>
-        <img class="lg-resume" src="Reed-Black-Resume-lg.jpg" alt="">
-       
-          <a href="https://drive.google.com/uc?export=download&id=1tIcmvOL2JdRXHDLu3nQHDJIU1VlbbUBe"><b-button >Download</b-button></a>
+        <iframe class="lg-resume"  src="https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Reed-Black-Resume.pdf" style="width:100%; height:600px;" frameborder="0"></iframe>
        
     </div>
 </template>
