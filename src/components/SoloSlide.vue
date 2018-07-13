@@ -1,7 +1,7 @@
 <template>
     <figure id="hide-bg">           
         <img id="ableton" src="/keys.png">
-        <figcaption id="solo" class="description">indy cuts</figcaption>
+        <figcaption id="solo" class="description">indie cuts</figcaption>
     </figure>
 </template>
 
