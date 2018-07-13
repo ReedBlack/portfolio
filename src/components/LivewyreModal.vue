@@ -14,7 +14,9 @@
               <img class="tech-icon" src="/icons/cy.png" alt="Cypress">
             </div>
         </header>
-        <img id="livewyre" src="/livewire-screen.png" alt="">
+        <div class="container">
+        <img id="livewyre" src="/Livewire.gif" alt="">
+        </div>
          <a href="https://livewire-f9c1f.firebaseapp.com/#/" target="blank"><b-button >Live Site</b-button></a>
           <a href="https://github.com/trujilloj/gigify" target="blank"><b-button >Github</b-button></a>
     </div>
@@ -35,10 +37,15 @@ p {
   height: 10%;
   width: 10%;
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 #livewyre {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 3px;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
 }
 
 .livetext {

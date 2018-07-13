@@ -17,7 +17,9 @@
             
 
         </header>
-        <img id="mixtap" src="/mixtap-screen.png" alt="">
+        <div class="container">
+        <img id="mixtap" src="/mixtap.gif" alt="">
+        </div>
          <a href="https://mixtap-dj.firebaseapp.com/#/" target="blank"><b-button >Live Site</b-button></a>
           <a href="https://github.com/ReedBlack/mixtap-frontend" target="blank"><b-button >Frontend Repo</b-button></a>
           <a href="https://github.com/ReedBlack/mixtap-backend" target="blank"><b-button >Backend Repo</b-button></a>
@@ -25,6 +27,11 @@
 </template>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 p {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
@@ -39,9 +46,9 @@ p {
   width: 10%;
 }
 #mixtap {
-  height: 100%;
-  width: 100%;
-  margin-bottom: 3px;
+  height: auto;
+  width: auto;
+  margin-bottom: 10px;
 }
 
 .livetext {
