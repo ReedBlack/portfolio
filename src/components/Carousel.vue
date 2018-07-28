@@ -59,6 +59,16 @@
          >
            <MixtapModal />
         </b-modal>
+         <b-modal
+            :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+         size="lg"
+         id="modal7"
+         >
+           <InkswellModal />
+        </b-modal>
         <carousel-3d id="shorter" style="height:70%;" 
         :controls-visible="true" 
         :controls-width="80"
@@ -100,6 +110,12 @@
               <MixtapSlide />
             </div>
           </slide>
+          <slide :index="6" id="inkswell" class="slide">
+            <div class="hidebutton" v-b-modal.modal7>
+
+              <InkswellSlide />
+            </div>
+          </slide>
         </carousel-3d>
     </div>
 </template>
@@ -118,6 +134,8 @@ import TacoModal from "@/components/TacoModal";
 import LivewyreModal from "@/components/LivewyreModal";
 import LivewyreSlide from "@/components/LivewyreSlide";
 import MixtapSlide from "@/components/MixtapSlide";
+import InkswellSlide from "@/components/InkswellSlide";
+import InkswellModal from "@/components/InkswellModal";
 import MixtapModal from "@/components/MixtapModal";
 
 export default {
@@ -139,7 +157,9 @@ export default {
     LivewyreModal,
     MusicModal,
     MixtapSlide,
-    MixtapModal
+    MixtapModal,
+    InkswellSlide,
+    InkswellModal
   },
   data() {
     return {
@@ -184,6 +204,7 @@ export default {
 #resume,
 #about,
 #live,
+#inkswell,
 #mixtap,
 .hidebutton {
   background: none;

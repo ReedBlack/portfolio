@@ -1,13 +1,11 @@
- <template>
-    <figure>
-                
+<template>
+    <figure>           
         <img id="poster" src="/livewire.png">
         <figcaption class="description" id="live-text">livewire</figcaption>
-
     </figure>
- </template>
+</template>
 
- <style>
+<style>
 #live-text {
   bottom: 0;
 }

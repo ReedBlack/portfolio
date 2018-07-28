@@ -37,7 +37,7 @@ p {
   height: 10%;
   width: 10%;
 }
-.container{
+.container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +49,7 @@ p {
 }
 
 .livetext {
-  color: orange;
+  color: #fffede;
 }
 
 .about-livewyre {
