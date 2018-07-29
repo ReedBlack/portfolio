@@ -1,61 +1,59 @@
 
 <template>
-  <div>
-    <ul>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Unataka</h1>
-                <audio :src="unataka" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">Feat. Colin Nielsen (guitars) 2018</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Dusk Rat</h1>
-                <audio :src="duskRat" controls></audio>
-            </div> 
-                 <h3 class="mix-date-loc">2014</h3>
-        
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Power</h1>
-                <audio :src="power" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">2017</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Faux Suede</h1>
-                <audio :src="fauxSuede" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">Feat. Derlee 2014</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Motel 6</h1>
-                <audio :src="motel6" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">2013</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Marble Animal</h1>
-                <audio :src="marbleAnimal" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">2016</h3>
-        </li>
-        <li class="player">
-            <div class=title-audio>
-                <h1 class="mix-title">Bigfoot</h1>
-                <audio :src="bigfoot" controls></audio>
-            </div> 
-            <h3 class="mix-date-loc">2015</h3>
-        </li>    
-       
-    </ul>
-      
- </div>
+    <div>
+        <ul>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Unataka</h1>
+                    <audio :src="unataka" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">Feat. Colin Nielsen (guitars) 2018</h3>
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Dusk Rat</h1>
+                    <audio :src="duskRat" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">2014</h3>
+            
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Power</h1>
+                    <audio :src="power" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">2017</h3>
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Faux Suede</h1>
+                    <audio :src="fauxSuede" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">Feat. Derlee 2014</h3>
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Motel 6</h1>
+                    <audio :src="motel6" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">2013</h3>
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Marble Animal</h1>
+                    <audio :src="marbleAnimal" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">2016</h3>
+            </li>
+            <li class="player">
+                <div class=title-audio>
+                    <h1 class="mix-title">Bigfoot</h1>
+                    <audio :src="bigfoot" controls></audio>
+                </div> 
+                <h3 class="mix-date-loc">2015</h3>
+            </li>        
+        </ul>     
+    </div>
 </template> 
 <script>
 export default {

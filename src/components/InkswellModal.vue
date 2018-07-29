@@ -13,7 +13,6 @@
               <img class="tech-icon" src="/icons/express.png" alt="Express.js">
               <img class="tech-icon" src="/icons/heroku.png" alt="Heroku">
              <img class="tech-icon" src="/icons/aws.png" alt="Amazon Web Services">
-        
             </div>
         </header>
         <div class="videos">

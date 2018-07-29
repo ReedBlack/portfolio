@@ -4,7 +4,7 @@
             <h1 class="livetext">About LIVEWIRE</h1>
             <p class="livetext">A three-in-one full stack application for venue management, artist outreach, and slick event listings for the public to see the schedule at their favorite venue and gain exposure to new acts. A weeklong group project, for which I served as front-end lead.</p>
             <h2 class="livetext">tech used</h2>
-             <div class="technologies">
+            <div class="technologies">
               <img class="tech-icon" src="/icons/vue.png" alt="VueJS">
               <img class="tech-icon" src="/icons/node.png" alt="node.js">
               <img class="tech-icon" src="/icons/knex.png" alt="knex.js">
@@ -17,8 +17,8 @@
         <div class="container">
         <img id="livewyre" src="/Livewire.gif" alt="">
         </div>
-         <a href="https://livewire-f9c1f.firebaseapp.com/#/" target="blank"><b-button >Live Site</b-button></a>
-          <a href="https://github.com/trujilloj/gigify" target="blank"><b-button >Github</b-button></a>
+        <a href="https://livewire-f9c1f.firebaseapp.com/#/" target="blank"><b-button >Live Site</b-button></a>
+        <a href="https://github.com/trujilloj/gigify" target="blank"><b-button >Github</b-button></a>
     </div>
 </template>
 
@@ -37,7 +37,7 @@ p {
   height: 10%;
   width: 10%;
 }
-.container {
+.container{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +49,7 @@ p {
 }
 
 .livetext {
-  color: #fffede;
+  color: orange;
 }
 
 .about-livewyre {

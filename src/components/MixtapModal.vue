@@ -5,7 +5,8 @@
             <p class="livetext">A site for both DJs and music fans. Mixtap is intended to exist somewhere between Soundcloud and Mixcloud. The purpose is for DJs to post their mixes and get exposure to fans around the world based on search criteria instead of popularity. The "DJ" section is for DJs to upload their music to be stored and searched. The "Party People" section is for fans to store their favorite mixes and search for new ones.</p>
             <h2 class="livetext">tech used</h2>
             <div class="technologies">
-              <img class="tech-icon" src="/icons/vue.png" alt="VueJS">
+              <img class="tech-icon" src="/icons/vueNative.png" alt="Vue Native">
+              <img class="tech-icon" src="/icons/reactNative.png" alt="React Native">
               <img class="tech-icon" src="/icons/node.png" alt="node.js">
               <img class="tech-icon" src="/icons/knex.png" alt="knex.js">
               <img class="tech-icon" src="/icons/psql.png" alt="PostgreSQL">

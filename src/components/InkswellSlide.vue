@@ -1,17 +1,14 @@
- <template>
-    <figure>
-                
-        <img id="fish" src="/inkswell.png">
-        <figcaption class="description" id="live-text">inkswell</figcaption>
-
-    </figure>
- </template>
+<template>
+  <figure>        
+    <img id="fish" src="/inkswell.png">
+    <figcaption class="description" id="live-text">inkswell</figcaption>
+  </figure>
+</template>
 
  <style>
 #live-text {
   bottom: 0;
 }
-
 #fish {
   margin-top: -20px;
   border: none;
