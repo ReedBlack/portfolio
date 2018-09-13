@@ -1,11 +1,7 @@
 <template>
-    <div id="wood">
-   
-    
-        <a id="home-button" href="https://reedblack.io/#/"><b-button size="lg" >Main site</b-button></a>
-        
-   
-    </div>
+  <div id="wood">
+      <a id="home-button" href="https://reedblack.io/#/"><b-button size="lg" >Main site</b-button></a>
+  </div>
 </template>
 
 <style scoped>

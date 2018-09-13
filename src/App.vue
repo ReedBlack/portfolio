@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-   
+    <transition name="router-anim" 
+    enter-active-class="animated bounceInDown"
+    leave-active-class="animated hinge" 
+    >
       <router-view/>
-      
-    
+    </transition>
   </div>
 </template>
 
@@ -12,14 +14,11 @@ export default {};
 </script>
 
 <style>
+
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css";
+
 .home {
   height: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-  #dirtlayer {
-    background: none;
-  }
 }
 
 .home {
@@ -55,5 +54,17 @@ export default {};
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.page {
+  position: fixed;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+transition {
+  animation-duration: 3000;
 }
 </style>

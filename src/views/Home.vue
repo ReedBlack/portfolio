@@ -1,6 +1,6 @@
 <template>
 
-  <div class="home">
+  <div class="home page">
     <div >
       <Title class="title" style="z-index:0;"  />
     </div>
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style>
+
 .home {
   height: 100%;
 }

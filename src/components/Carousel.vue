@@ -44,16 +44,6 @@
             :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
             :body-text-variant="bodyTextVariant"
-         size="sm"
-         id="modal5"
-         >
-           <MusicModal />
-        </b-modal>
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-            :hide-footer="true"
-            :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"
          size="lg"
          id="modal6"
          >
@@ -129,7 +119,7 @@ import AboutMeSlide from "@/components/AboutMeSlide";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import ResumeModal from "@/components/ResumeModal";
-import MusicModal from "@/components/MusicModal";
+
 import TacoModal from "@/components/TacoModal";
 import LivewyreModal from "@/components/LivewyreModal";
 import LivewyreSlide from "@/components/LivewyreSlide";
@@ -155,7 +145,6 @@ export default {
     TacoModal,
     LivewyreSlide,
     LivewyreModal,
-    MusicModal,
     MixtapSlide,
     MixtapModal,
     InkswellSlide,

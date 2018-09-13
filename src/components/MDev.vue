@@ -1,15 +1,17 @@
- <template>
+<template>
+  <router-link to="/">
     <figure>           
         <h1 id="dev-link" src="/ableton 2.png"></></h1>
         <figcaption id="solo" class="description">dev/home</figcaption>
     </figure>
- </template>
+  </router-link>
+</template>
 
- <script>
+<script>
 export default {};
 </script>
- 
- <style scoped>
+
+<style scoped>
 #dev-link {
   -webkit-filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));

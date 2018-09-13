@@ -3,9 +3,6 @@
     <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
       <h3 class="contact">contact</h3>
     </a>
-    <div class="ferns">
-      <img class="fern-cover three three-show" src="/fern3.png" alt="">
-    </div>
     <h1 class="raise">Reed blacK</h1>
   </div>
 </template>
@@ -17,65 +14,7 @@ export default {
 </script>
 
 <style scoped>
-.fern-cover {
-  max-height: 85%;
-  max-width: 95%;
-  position: absolute;
-  margin-left: 16%;
-  z-index: 1;
-  margin-top: -12.5%;
-  -webkit-filter: drop-shadow(7px 7px 6px #222);
-  filter: drop-shadow(7px 7px 6px #222);
-}
 
-.three-show {
-  margin-top: -55px;
-  max-height: 20%;
-  max-width: 12%;
-  margin-left: 44%;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Safari */
-  transform: rotate(0deg);
-
-  -webkit-filter: drop-shadow(3px 3px 2px #222);
-  filter: drop-shadow(3px 3px 2px #222);
-}
-
-@keyframes uncoverTitle {
-  from {
-    max-height: 150%;
-    max-width: 150%;
-    position: absolute;
-    margin-left: 16%;
-    z-index: 1;
-    margin-top: -12.5%;
-    -webkit-filter: drop-shadow(7px 7px 6px #222);
-    filter: drop-shadow(7px 7px 6px #222);
-    margin-left: 30%;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Safari */
-    transform: rotate(90deg);
-  }
-  to {
-    margin-top: -55px;
-    max-height: 20%;
-    max-width: 12%;
-    margin-left: 44%;
-    -ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: rotate(0deg); /* Safari */
-    transform: rotate(0deg);
-    -webkit-filter: drop-shadow(3px 3px 2px #222);
-    filter: drop-shadow(3px 3px 2px #222);
-  }
-}
-.three {
-  animation: 2.8s ease-out 0s 1 uncoverTitle;
-}
-@media only screen and (max-width: 600px) {
-  .three {
-    display: none;
-  }
-}
 @media only screen and (max-width: 800px) {
   h1 {
     font-size: 14.9vw !important;

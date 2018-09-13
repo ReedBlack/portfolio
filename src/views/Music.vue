@@ -1,6 +1,5 @@
 <template>
-
-  <div id="style-override" class="music">
+  <div id="style-override" class="music page">
     <div>
       <MTitle class="title" style="z-index:0;"  />
     </div>
@@ -13,11 +12,9 @@
     <br>
     <template id="center">
       <MCarousel class="cards" style="z-index:2;" />
-    </template>
-    
+    </template>   
     <MFooter class="bottom" />
   </div>
-
 </template>
 
 <script>
