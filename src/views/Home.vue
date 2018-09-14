@@ -1,5 +1,4 @@
 <template>
-
   <div class="home page">
     <div >
       <Title class="title" style="z-index:0;"  />
@@ -15,9 +14,7 @@
       <Carousel class="cards" style="z-index:2;" />
     </template>
     <Footer class="bottom" />
-
   </div>
-
 </template>
 
 <script>
@@ -36,7 +33,6 @@ export default {
 </script>
 
 <style>
-
 .home {
   height: 100%;
 }

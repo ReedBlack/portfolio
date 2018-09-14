@@ -18,6 +18,7 @@
     font-size: 3vh;
   }
 }
+
 a {
   width: 20%;
 }

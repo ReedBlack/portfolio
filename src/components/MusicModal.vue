@@ -1,7 +1,6 @@
 <template>
     <div class="record">  
-     <a href="https://reedblack.io/#/Music"><b-button size="lg" >Enter</b-button></a>
- 
+      <a href="https://reedblack.io/#/Music"><b-button size="lg" >Enter</b-button></a>
     </div>
 </template>
 

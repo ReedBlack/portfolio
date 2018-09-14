@@ -19,22 +19,26 @@ export default {};
 
 .home {
   height: 100%;
-}
-
-.home {
-  height: 100%;
   width: 100%;
-
   background-image: url("/wood-background.jpg");
   position: fixed;
   background-size: cover;
 }
+
 .music {
   height: 100%;
   width: 100%;
-
   background-image: url("/vaportropBG.jpg");
   background-position: center;
+  position: fixed;
+  background-size: cover;
+}
+
+.projects {
+  height: 100%;
+  width: 100%;
+  background-image: url("/circular-steel 2.jpg");
+  /* background-position: center; */
   position: fixed;
   background-size: cover;
 }
