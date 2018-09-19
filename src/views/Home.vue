@@ -1,5 +1,5 @@
 <template>
-  <div class="home page">
+  <div id="home-override" class="home page">
     <div >
       <Title class="title" style="z-index:0;"  />
     </div>

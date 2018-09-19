@@ -1,7 +1,7 @@
 <template>
   <router-link to="/">
     <figure>           
-        <h1 id="dev-link" src="/ableton 2.png">~/</h1>
+        <img id="dev-link" src="/tilde.png" />
         <figcaption id="homelink" class="description">home</figcaption>
     </figure>
   </router-link>
@@ -13,13 +13,13 @@ export default {};
 
 <style scoped>
 #dev-link {
-  -webkit-filter: drop-shadow(5px 5px 4px #222);
-  filter: drop-shadow(5px 5px 4px #222);
-  font-size: 160px;
+  -webkit-filter: drop-shadow(5px 5px 4px orangered);
+  filter: drop-shadow(5px 5px 4px orangered);
+  font-size: 250px;
   color: black;
   font-weight: bold;
   text-align: center;
-  margin-left: -18px;
+  margin-left: -12px;
 }
 
 #homelink {
@@ -30,11 +30,16 @@ export default {};
   text-align: center;
   letter-spacing: 0.2em;
   font-size: 32px;
-  font-weight: bolder;
+  font-weight: 900;
   min-width: 100%;
   z-index: 5;
-  -webkit-filter: drop-shadow(silver);
-  filter: drop-shadow(silver);
+  font-weight: 900;
+  background: url("/lavabackground.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-filter: drop-shadow(orangered);
+  filter: drop-shadow(orangered);
   transform: rotate(5deg);
 }
 </style>

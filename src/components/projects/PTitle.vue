@@ -27,8 +27,8 @@ export default {
 .raise:hover {
   font-size: 15.7v;
   transition: all 0.2s ease-in-out 0s;
-  -webkit-filter: drop-shadow(0px -1px 1px silver);
-  filter: drop-shadow(0px -1px 1px silver);
+  -webkit-filter: drop-shadow(0px -1px 1px orange);
+  filter: drop-shadow(0px -1px 1px orange);
 }
 
 h3 {
@@ -37,37 +37,37 @@ h3 {
   margin-top: -27px;
   margin-left: 18px;
   font-size: 4vh;
-  background: url("/black-steel2.jpg");
+  background: url("/lavabackground.jpg");
   background-repeat: repeat-x;
-  background-size: 50%;
+  background-size: 120%;
   color: transparent;
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 0px silver);
-  filter: drop-shadow(0px -1px 0px silver);
+  -webkit-filter: drop-shadow(1px -1px 0px orangered);
+  filter: drop-shadow(1px -1px 0px orangered);
 }
 h1 {
   font-family: "Bowlby One SC", cursive;
   margin-top: 52px;
   font-weight: bold;
-  font-size: 15.9vh;
+  font-size: 13.9vh;
   letter-spacing: 0.04vw;
   text-align: center;
   position: absolute;
   align-self: center;
   transition: all 0.1s ease-in-out 0s;
-  background: url("/black-steel2.jpg");
-  background-repeat: repeat-x;
-  background-size: 50%;
+  background: url("/lavabackground.jpg");
+  background-size: 75%;
+  background-position: top;
   color: transparent;
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 0px silver);
-  filter: drop-shadow(0px -1px 0px silver);
+  -webkit-filter: drop-shadow(1px -1px 1px orangered);
+  filter: drop-shadow(1px -1px 1px orangered);
 }
 
 .title {

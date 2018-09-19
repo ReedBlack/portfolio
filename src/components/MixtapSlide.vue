@@ -12,12 +12,17 @@ export default {};
  <style scoped>
 h2 {
   font-size: 75px;
-  -webkit-filter: drop-shadow(5px 5px 4px #222);
-  filter: drop-shadow(5px 5px 4px #222);
-  font-weight: bold;
+  -webkit-filter: drop-shadow(5px 5px 4px orangered);
+  filter: drop-shadow(5px 5px 4px orangered);
+  font-weight: 900;
   text-align: center;
 }
 #description {
   bottom: 0;
+  font-weight: 900;
+  background: url("/lavabackground.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 </style>

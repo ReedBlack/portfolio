@@ -1,8 +1,8 @@
 <template>
   <router-link to="/">
     <figure>           
-        <h1 id="dev-link" src="/ableton 2.png"></></h1>
-        <figcaption id="solo" class="description">dev/home</figcaption>
+        <img id="dev-link" src="/tilde.png" />
+        <figcaption id="solo" class="description">home</figcaption>
     </figure>
   </router-link>
 </template>
@@ -15,9 +15,6 @@ export default {};
 #dev-link {
   -webkit-filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
-  font-size: 160px;
-  color: black;
-  font-weight: bold;
   text-align: center;
   margin-left: -18px;
 }

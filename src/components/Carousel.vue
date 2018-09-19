@@ -1,16 +1,15 @@
-<template>
-    
+<template>    
     <div id="turnt">
-         <b-modal 
-             :header-bg-variant="headerBgVariant"
-             :hide-footer="true"
-             :body-bg-variant="bodyBgVariant"
-             :body-text-variant="bodyTextVariant"
-             size="lg"
-             id="modal1">
-           <AboutMeModal />
+        <b-modal 
+            :header-bg-variant="headerBgVariant"
+            :hide-footer="true"
+            :body-bg-variant="bodyBgVariant"
+            :body-text-variant="bodyTextVariant"
+            size="lg"
+            id="modal1">
+          <AboutMeModal />
         </b-modal>
-         <b-modal
+        <b-modal
             :body-close-label="close"
             :hide-footer="true"
             :header-bg-variant="headerBgVariant"
@@ -18,46 +17,18 @@
             :body-text-variant="bodyTextVariant"
             size="lg"
             id="modal2"
-         >
-           <ResumeModal />
+        >
+          <ResumeModal />
         </b-modal>
         <b-modal
-        :header-bg-variant="headerBgVariant"
-        :hide-footer="true"
-        :body-bg-variant="bodyBgVariant"
-        :body-text-variant="bodyTextVariant"
-        size="lg"
-        id="modal3">
-            <TacoModal />
-        </b-modal>
-        <b-modal
-        :header-bg-variant="headerBgVariant"
-        :hide-footer="true"
-        :body-bg-variant="bodyBgVariant"
-        :body-text-variant="bodyTextVariant"
-        size="lg"
-        id="modal4">
-           <LivewyreModal />
-        </b-modal>
-         <b-modal
             :header-bg-variant="headerBgVariant"
             :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
             :body-text-variant="bodyTextVariant"
-         size="lg"
-         id="modal6"
-         >
-           <MixtapModal />
-        </b-modal>
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-            :hide-footer="true"
-            :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"
-         size="lg"
-         id="modal7"
-         >
-           <InkswellModal />
+        size="lg"
+        id="modal6"
+        >
+          <MixtapModal />
         </b-modal>
         <carousel-3d id="shorter" style="height:70%;" 
         :controls-visible="true" 
@@ -66,44 +37,29 @@
         :height="325" 
         :width="255" 
         :clickable="true"
-        :inverse-scaling="1300" :space="400"
+        :display="3"
+        :perspective="200"
+        :inverse-scaling="1500" 
+        :space="720"
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
-             <AboutMeSlide />
+              <AboutMeSlide />
             </div> 
           </slide>
           <slide :index="1" id="resume" class="slide">
             <div class="hidebutton" v-b-modal.modal2>
               <ResumeSlide />
             </div> 
-          </slide>
-          <slide :index="2" id="live" class="slide">
-            <div class="hidebutton" v-b-modal.modal4>
-              <LivewyreSlide />
-            </div>
-          </slide>
-          <slide :index="3" id="taco" class="slide">
-            <div class="hidebutton" v-b-modal.modal3>
-              <TacoSlide />
-            </div>
-          </slide>
-          <slide :index="4" id="music" class="slide music">
+          </slide>        
+          <slide :index="2" id="music" class="slide music">
             <div class="hidebutton" v-b-modal.modal5>
-
               <MusicSlide />
             </div>
-          </slide>
-          <slide :index="5" id="mixtap" class="slide">
-            <div class="hidebutton" v-b-modal.modal6>
-
-              <MixtapSlide />
-            </div>
-          </slide>
-          <slide :index="6" id="inkswell" class="slide">
+          </slide>         
+          <slide :index="3" id="projectlink" class="slide">
             <div class="hidebutton" v-b-modal.modal7>
-
-              <InkswellSlide />
+              <ProjectsLink />
             </div>
           </slide>
         </carousel-3d>
@@ -119,7 +75,6 @@ import AboutMeSlide from "@/components/AboutMeSlide";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import ResumeModal from "@/components/ResumeModal";
-
 import TacoModal from "@/components/TacoModal";
 import LivewyreModal from "@/components/LivewyreModal";
 import LivewyreSlide from "@/components/LivewyreSlide";
@@ -127,6 +82,7 @@ import MixtapSlide from "@/components/MixtapSlide";
 import InkswellSlide from "@/components/InkswellSlide";
 import InkswellModal from "@/components/InkswellModal";
 import MixtapModal from "@/components/MixtapModal";
+import ProjectsLink from "@/components/ProjectsLink";
 
 export default {
   name: "Carousel",
@@ -148,7 +104,8 @@ export default {
     MixtapSlide,
     MixtapModal,
     InkswellSlide,
-    InkswellModal
+    InkswellModal,
+    ProjectsLink
   },
   data() {
     return {
@@ -175,12 +132,14 @@ export default {
 </script>
 
 <style>
-#style-override span {
-  font-size: 80px;
+#home-override span {
+  font-size: 100px;
 }
 
 #shorter {
-  width: 85%;
+  width: 70%;
+  padding-bottom: 10px;
+  
 }
 @media only screen and (max-width: 600px) {
   #shorter {
@@ -188,13 +147,10 @@ export default {
     width: 100%;
   }
 }
-#taco,
 #music,
 #resume,
 #about,
-#live,
-#inkswell,
-#mixtap,
+#projectlink,
 .hidebutton {
   background: none;
   border: none;
@@ -204,7 +160,8 @@ export default {
 .carousel-3d-container figure {
   margin: 0;
   z-index: 5;
-  padding-bottom: 60px;
+  padding-top: 0px;
+  margin-top: 0px;
   padding: 17px;
 }
 .carousel-3d-container {
@@ -218,8 +175,8 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   text-align: center;
   letter-spacing: 0.2em;
-  font-size: 30px;
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: 900;
   min-width: 100%;
   box-sizing: border-box;
   z-index: 5;

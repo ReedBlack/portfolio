@@ -1,13 +1,13 @@
- <template>
+<template>
     <figure id="hide-bg">
                 
         <img id="photo" src="/me.jpg">
         <figcaption id="me" class="description">about me</figcaption>
 
     </figure>
- </template>
+</template>
 
- <style scoped>
+<style scoped>
 #photo {
   border: none;
   background: none;

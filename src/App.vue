@@ -37,10 +37,11 @@ export default {};
 .projects {
   height: 100%;
   width: 100%;
-  background-image: url("/circular-steel 2.jpg");
-  /* background-position: center; */
+  background-image: url("/cooling-lava.jpg");
+  background-position: center;
   position: fixed;
   background-size: cover;
+  z-index: 1000000;
 }
 .footer {
   align-self: flex-end;

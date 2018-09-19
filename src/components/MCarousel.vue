@@ -1,96 +1,97 @@
 <template>
     
-    <div id="turnt">
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-            :hide-footer="true"
-            :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"
-            :footer-bg-variant="footerBgVariant"
-            :footer-text-variant="footerTextVariant"
-         size="lg"
-         id="modal5"
-         >
-           <MusicInfoModal />
-        </b-modal>
-         <b-modal 
-             :header-bg-variant="headerBgVariant"
-             :hide-footer="true"
-             :body-bg-variant="bodyBgVariant"
-             :body-text-variant="bodyTextVariant"
-             size="lg"
-             id="modal7">
-           <IndyModal />
-        </b-modal>
-         <b-modal
-            :header-bg-variant="headerBgVariant"
-            :hide-footer="true"
-            :body-bg-variant="bodyBgVariant"
-            :body-text-variant="bodyTextVariant"   
-            size="sm"
-            id="modal2"
-         >
-           <DevNavModal />
-        </b-modal>
-        <b-modal
+  <div id="turnt">
+    <b-modal
+        :header-bg-variant="headerBgVariant"
+        :hide-footer="true"
+        :body-bg-variant="bodyBgVariant"
+        :body-text-variant="bodyTextVariant"
+        :footer-bg-variant="footerBgVariant"
+        :footer-text-variant="footerTextVariant"
+        size="lg"
+        id="modal5"
+      >
+      <MusicInfoModal />
+    </b-modal>
+    <b-modal 
         :header-bg-variant="headerBgVariant"
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
         :body-text-variant="bodyTextVariant"
         size="lg"
-        id="modal3">
-            <StudioModal />
-        </b-modal>
-        <b-modal
+        id="modal7">
+        <IndyModal />
+    </b-modal>
+    <b-modal
         :header-bg-variant="headerBgVariant"
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
-        :body-text-variant="bodyTextVariant"
-        size="lg"
-        id="modal4">
-           <DjModal />
-        </b-modal>
-        <carousel-3d id="music-c" style="height:70%;" 
-        :controls-visible="true" 
-        :controls-width="60"
-        :controls-height="0"
-        :height="325" 
-        :width="255" 
-        :clickable="true"
-        :inverse-scaling="1300" :space="400"
-        >
-          <slide :index="0" id="solo-cuts" class="slide">
-            <div class="hidebutton" v-b-modal.modal7>
-             <SoloSlide />
-            </div> 
-          </slide>
-          <slide :index="1" id="dev" class="slide">
-            <div class="hidebutton" v-b-modal.modal2>
-              <MDev />
-            </div> 
-          </slide>
-          <slide :index="2" id="studio-cuts" class="slide">
-            <div class="hidebutton" v-b-modal.modal3>
-              <StudioSlide />
-            </div>
-          </slide>
-          <slide :index="3" id="DJ" class="slide">
-            <div class="hidebutton" v-b-modal.modal4>
-              <DJSlide />
-            </div>
-          </slide>
-          <slide :index="4" id="music" class="slide music">
-            <div class="hidebutton" v-b-modal.modal5>
-              <MusicSlideM />
-            </div>
-          </slide>
-        </carousel-3d>
-    </div>
+        :body-text-variant="bodyTextVariant"   
+        size="sm"
+        id="modal2"
+    >
+      <DevNavModal />
+    </b-modal>
+    <b-modal
+    :header-bg-variant="headerBgVariant"
+    :hide-footer="true"
+    :body-bg-variant="bodyBgVariant"
+    :body-text-variant="bodyTextVariant"
+    size="lg"
+    id="modal3">
+      <StudioModal />
+    </b-modal>
+    <b-modal
+    :header-bg-variant="headerBgVariant"
+    :hide-footer="true"
+    :body-bg-variant="bodyBgVariant"
+    :body-text-variant="bodyTextVariant"
+    size="lg"
+    id="modal4">
+      <DjModal />
+    </b-modal>
+    <carousel-3d id="music-c" style="height:70%;" 
+    :controls-visible="true" 
+    :controls-width="60"
+    :controls-height="0"
+    :height="325" 
+    :width="255" 
+    :display="3"
+    :perspective="200"
+    :clickable="true"
+    :inverse-scaling="1500" :space="720"
+    >
+      <slide :index="0" id="solo-cuts" class="slide">
+        <div class="hidebutton" v-b-modal.modal7>
+          <SoloSlide />
+        </div> 
+      </slide>
+      <slide :index="1" id="dev" class="slide">
+        <div class="hidebutton" v-b-modal.modal2>
+          <MDev />
+        </div> 
+      </slide>
+      <slide :index="2" id="studio-cuts" class="slide">
+        <div class="hidebutton" v-b-modal.modal3>
+          <StudioSlide />
+        </div>
+      </slide>
+      <slide :index="3" id="DJ" class="slide">
+        <div class="hidebutton" v-b-modal.modal4>
+          <DJSlide />
+        </div>
+      </slide>
+      <slide :index="4" id="music" class="slide music">
+        <div class="hidebutton" v-b-modal.modal5>
+          <MusicSlideM />
+        </div>
+      </slide>
+    </carousel-3d>
+  </div>
 </template>
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
-
 import StudioSlide from "@/components/StudioSlide";
 import MusicSlideM from "@/components/MusicSlideM";
 import SoloSlide from "@/components/SoloSlide";
@@ -155,11 +156,11 @@ export default {
 
 #style-override span {
   color: fuchsia;
-  font-size: 80px;
+  font-size: 110px;
 }
 
 #music-c {
-  width: 90%;
+  width: 70%;
   margin-top: -1%;
 }
 #ableton,
@@ -171,22 +172,6 @@ export default {
   background: none;
   border: none;
   box-shadow: none;
-}
-
-.carousel-3d-container figure {
-  margin: 0;
-  z-index: 5;
-  padding-bottom: 60px;
-  padding: 17px;
-}
-.carousel-3d-container {
-  padding: 30px;
-  margin: 50px;
-}
-
-#style-override .widen {
-  width: 90%;
-  background-color: rgb(255, 0, 255);
 }
 
 figure:hover {

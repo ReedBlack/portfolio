@@ -33,7 +33,7 @@ export default {
 
 h3 {
   font-family: "Bowlby One SC", cursive;
-  width: 145px;
+  width: 195px;
   margin-top: -27px;
   margin-left: 18px;
   font-size: 4vh;
@@ -52,7 +52,7 @@ h1 {
   font-family: "Bowlby One SC", cursive;
   margin-top: 52px;
   font-weight: bold;
-  font-size: 15.9vh;
+  font-size: 13.9vh;
   letter-spacing: 0.04vw;
   text-align: center;
   position: absolute;

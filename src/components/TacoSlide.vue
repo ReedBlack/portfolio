@@ -7,10 +7,10 @@
     </figure>
  </template>
 
- <style>
+ <style scoped>
 #spinner {
-  -webkit-filter: drop-shadow(5px 5px 4px #222);
-  filter: drop-shadow(5px 5px 4px #222);
+  -webkit-filter: drop-shadow(4px 4px 3px orangered);
+  filter: drop-shadow(4px 4px 3px orangered);
   -webkit-animation-name: spin;
   -webkit-animation-duration: 13000ms;
   -webkit-animation-iteration-count: infinite;
@@ -64,5 +64,10 @@
 
 #taco-text {
   bottom: 0;
+  font-weight: 900;
+  background: url("/lavabackground.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 </style>

@@ -23,7 +23,7 @@
   right: 0;
   margin-right: 12px;
   text-decoration-line: none;
-  font-size: 7vh;
+  font-size: 7.5vh;
 }
 
 @media only screen and (max-width: 600px) {

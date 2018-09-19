@@ -8,13 +8,18 @@
 <style>
 #live-text {
   bottom: 0;
+  font-weight: 900;
+  background: url("/lavabackground.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 #poster {
   border: none;
   background: none;
   border-radius: 50%;
-  -webkit-filter: drop-shadow(5px 5px 4px #222);
-  filter: drop-shadow(5px 5px 4px #222);
+  -webkit-filter: drop-shadow(5px 5px 4px orangered);
+  filter: drop-shadow(5px 5px 4px orangered);
 }
 </style>
