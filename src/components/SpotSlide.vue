@@ -1,7 +1,7 @@
 <template>
     <figure id="hide-bg">           
-        <img id="ableton" src="/keys.png">
-        <figcaption id="solo" class="description">indie cuts</figcaption>
+        <img id="ableton" src="/spotifylogo.png">
+        <figcaption id="solo" class="description">playlists</figcaption>
     </figure>
 </template>
 
@@ -9,10 +9,9 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 #hide-bg {
   background: none;
-  border: none;
   box-shadow: none;
 }
 

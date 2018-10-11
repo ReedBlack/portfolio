@@ -1,13 +1,11 @@
- <template>
-    <figure>
-                
+<template>
+    <figure>                
         <img id="spinner" src="/taco.png">
         <figcaption class="description" id="taco-text">¡taco taco!</figcaption>
-
     </figure>
- </template>
+</template>
 
- <style scoped>
+<style scoped>
 #spinner {
   -webkit-filter: drop-shadow(4px 4px 3px orangered);
   filter: drop-shadow(4px 4px 3px orangered);
@@ -23,7 +21,6 @@
   -ms-animation-duration: 13000ms;
   -ms-animation-iteration-count: infinite;
   -ms-animation-timing-function: linear;
-
   animation-name: spin;
   animation-duration: 13000ms;
   animation-iteration-count: infinite;

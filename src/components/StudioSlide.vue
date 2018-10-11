@@ -1,15 +1,15 @@
- <template>
+<template>
     <figure>           
         <img id="studio" src="/faders.png">
         <figcaption id="solo" class="description">studio cuts</figcaption>
     </figure>
- </template>
+</template>
 
- <script>
+<script>
 export default {};
 </script>
  
- <style scoped>
+<style scoped>
 #studio {
   -webkit-filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));
   filter: drop-shadow(5px 5px 4px rgb(1, 200, 194));

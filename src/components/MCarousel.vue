@@ -50,6 +50,15 @@
     id="modal4">
       <DjModal />
     </b-modal>
+    <b-modal
+    :header-bg-variant="headerBgVariant"
+    :hide-footer="true"
+    :body-bg-variant="bodyBgVariant"
+    :body-text-variant="bodyTextVariant"
+    size="lg"
+    id="modal6">
+      <SpotModal />
+    </b-modal>
     <carousel-3d id="music-c" style="height:70%;" 
     :controls-visible="true" 
     :controls-width="60"
@@ -86,6 +95,11 @@
           <MusicSlideM />
         </div>
       </slide>
+      <slide :index="5" id="spot" class="slide">
+        <div class="hidebutton" v-b-modal.modal6>
+          <SpotSlide />
+        </div>
+      </slide>
     </carousel-3d>
   </div>
 </template>
@@ -104,6 +118,8 @@ import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import MusicInfoModal from "@/components/MusicInfoModal";
 import StudioModal from "@/components/StudioModal";
+import SpotModal from "@/components/SpotModal";
+import SpotSlide from "@/components/SpotSlide";
 
 export default {
   name: "Carousel",
@@ -120,7 +136,9 @@ export default {
     IndyModal,
     StudioModal,
     MusicInfoModal,
-    DevNavModal
+    DevNavModal,
+    SpotSlide,
+    SpotModal
   },
   data() {
     return {
@@ -165,6 +183,7 @@ export default {
 }
 #ableton,
 #DJ,
+#spot,
 #solo-cuts,
 #dev,
 #studio-cuts,

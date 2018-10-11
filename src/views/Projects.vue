@@ -1,8 +1,7 @@
 <template>
-  <div id="project-override" class="projects page">
-      
+  <div id="project-override" class="projects page">     
     <div>
-      <PTitle class="title" style="z-index:0;"  />
+      <PTitle class="title" style="z-index:0;" />
     </div>
     <br>
     <br>
@@ -34,7 +33,6 @@ export default {
 </script>
 
 <style scoped>
-
 #center {
   width: 100%;
   display: flex;

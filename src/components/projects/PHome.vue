@@ -11,7 +11,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style>
 #dev-link {
   -webkit-filter: drop-shadow(5px 5px 4px orangered);
   filter: drop-shadow(5px 5px 4px orangered);
