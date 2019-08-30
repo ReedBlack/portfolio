@@ -44,15 +44,15 @@
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
-              <AboutMeSlide />
+              <TitleSlide title="about me" image="me.jpg" />
             </div> 
           </slide>
-          <slide :index="1" id="resume" class="slide">
+          <slide :index="2" id="resume" class="slide">
             <div class="hidebutton" v-b-modal.modal2>
               <ResumeSlide />
             </div> 
           </slide>        
-          <slide :index="2" id="music" class="slide music">
+          <slide :index="1" id="music" class="slide music">
             <div class="hidebutton" v-b-modal.modal5>
               <MusicSlide />
             </div>
@@ -71,6 +71,7 @@ import { Carousel3d, Slide } from "vue-carousel-3d";
 import ResumeSlide from "@/components/ResumeSlide";
 import TacoSlide from "@/components/TacoSlide";
 import MusicSlide from "@/components/MusicSlide";
+import TitleSlide from "@/components/TitleSlide";
 import AboutMeSlide from "@/components/AboutMeSlide";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
@@ -90,6 +91,7 @@ export default {
     // "carousel-3d": Carousel3d.Carousel3d,
     // slide: Carousel3d.Slide,
     Carousel3d,
+    TitleSlide,
     Slide,
     AboutMeSlide,
     ResumeSlide,
