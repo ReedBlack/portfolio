@@ -3,7 +3,7 @@
     <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
       <h3 class="contact">contact</h3>
     </a>
-    <h1 class="raise">Reed blacK</h1>
+    <h1 class="raise">Reed Black</h1>
   </div>
 </template>
 
@@ -32,12 +32,12 @@ export default {
 }
 
 h3 {
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Merienda", cursive;
   width: 195px;
   margin-top: -27px;
   margin-left: 18px;
   font-size: 4vh;
-  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
+  background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
   background-repeat: repeat-x;
   background-size: cover;
   color: transparent;
@@ -45,20 +45,20 @@ h3 {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
+  -webkit-filter: drop-shadow(0px 0px 1px rgb(99, 59, 25));
+  filter: drop-shadow(0px 0px 1px rgb(99, 59, 25));
 }
 h1 {
-  font-family: "Bowlby One SC", cursive;
+  font-family: "Merienda", cursive;
   margin-top: 52px;
   font-weight: bold;
-  font-size: 13.9vh;
+  font-size: 11.9vh;
   letter-spacing: 0.04vw;
   text-align: center;
+    background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
   position: absolute;
   align-self: center;
   transition: all 0.1s ease-in-out 0s;
-  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
   background-repeat: repeat-x;
   background-size: cover;
   color: transparent;
@@ -66,8 +66,8 @@ h1 {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 3px rgb(99, 59, 25));
+  -webkit-filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
+  filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
 }
 
 .title {

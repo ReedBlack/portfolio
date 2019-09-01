@@ -1,5 +1,5 @@
 <template>
-  <div id="home-override" class="home page">
+  <div id="home-override" class="home page" style="backgroundColor: 'theme.jungle.backgroundImage'">
     <div >
       <Title class="title" style="z-index:0;"  />
     </div>
@@ -13,7 +13,7 @@
     <template>
       <Carousel class="cards" style="z-index:2;" />
     </template>
-    <Footer class="bottom" />
+    <Footer class="bottom" theme="jungle" />
   </div>
 </template>
 

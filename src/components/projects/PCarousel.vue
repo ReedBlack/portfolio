@@ -1,5 +1,4 @@
 <template>
-    
     <div id="turnt">
         <b-modal
         :header-bg-variant="headerBgVariant"
@@ -53,27 +52,54 @@
         >        
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
-                    <PHome />
+                    <TitleSlide
+                        title="home"
+                        image="tilde.png"
+                        imageType="png"
+                        linkTo="/"
+                        theme="lava"
+                    />
                 </div> 
             </slide>
             <slide :index="1" id="live" class="slide">
                 <div class="hidebutton" v-b-modal.modal4>
-                    <LivewyreSlide />
+                    <TitleSlide
+                        title="livewire"
+                        image="livewire.png"
+                        theme="lava"
+                        properties="lava"
+                    /> 
                 </div>
             </slide>
             <slide :index="4" id="taco" class="slide">
                 <div class="hidebutton" v-b-modal.modal3>
-                    <TacoSlide />
+                    <TitleSlide
+                        title="taco-taco"
+                        image="taco.png"
+                        theme="lava"
+                        properties="lava spins"
+                    /> 
                 </div>
             </slide>
             <slide :index="0" id="inkswell" class="slide">
                 <div class="hidebutton" v-b-modal.modal7>
-                    <InkswellSlide />
+                    <TitleSlide
+                        title="inskwell"
+                        image="inkswell.png"
+                        theme="lava"
+                        properties="lava"
+                    /> 
                 </div>
             </slide>
             <slide :index="3" id="mixtap" class="slide">
                 <div class="hidebutton" v-b-modal.modal6>
-                    <MixtapSlide />
+                    <TitleSlide
+                        title="mixtap"
+                        image="mixtap.png"
+                        theme="lava"
+                        properties="lava"
+                        imageType="lavaphoto"
+                    /> 
                 </div>
             </slide>
         </carousel-3d>
@@ -82,33 +108,23 @@
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
-import TacoSlide from "@/components/TacoSlide";
-import MusicSlide from "@/components/MusicSlide";
 import BootstrapVue from "bootstrap-vue";
-import PHome from "@/components/projects/PHome";
 import TacoModal from "@/components/TacoModal";
 import LivewyreModal from "@/components/LivewyreModal";
-import LivewyreSlide from "@/components/LivewyreSlide";
-import MixtapSlide from "@/components/MixtapSlide";
-import InkswellSlide from "@/components/InkswellSlide";
+import TitleSlide from "@/components/TitleSlide"
 import InkswellModal from "@/components/InkswellModal";
 import MixtapModal from "@/components/MixtapModal";
 
 export default {
     name: "Carousel",
     components: {
+        TitleSlide,
         Carousel3d,
         Slide,
-        PHome,
-        MusicSlide,
-        TacoSlide,
         BootstrapVue,
         TacoModal,
-        LivewyreSlide,
         LivewyreModal,
-        MixtapSlide,
         MixtapModal,
-        InkswellSlide,
         InkswellModal
     },
     data() {

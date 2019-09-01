@@ -13,20 +13,20 @@
     <template id="center">
       <PCarousel class="cards" style="z-index:2;" />
     </template>   
-    <PFooter class="bottom" />
+    <Footer class="bottom" theme="lava" />
   </div>
 </template>
 
 <script>
 import PTitle from "@/components/projects/PTitle";
-import PFooter from "@/components/projects/PFooter";
+import Footer from "@/components/Footer";
 import PCarousel from "@/components/projects/PCarousel";
 
 export default {
   name: "home",
   components: {
     PTitle,
-    PFooter,
+    Footer,
     PCarousel
   }
 };

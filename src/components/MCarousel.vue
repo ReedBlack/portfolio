@@ -72,32 +72,64 @@
     >
       <slide :index="0" id="solo-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal7>
-          <SoloSlide />
+          <TitleSlide
+                title="indie tracks"
+                image="keys.png"
+                imageType="png"
+                theme="sky"
+          />
         </div> 
       </slide>
       <slide :index="1" id="dev" class="slide">
         <div class="hidebutton" v-b-modal.modal2>
-          <MDev />
+          <TitleSlide
+                title="home"
+                image="tildewhite.png"
+                imageType="png"
+                linkTo="/"
+                theme="sky"
+          />
         </div> 
       </slide>
       <slide :index="2" id="studio-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal3>
-          <StudioSlide />
+          <TitleSlide
+                title="stonecutter"
+                image="faders.png"
+                imageType="png"
+                theme="sky"
+          />
         </div>
       </slide>
       <slide :index="3" id="DJ" class="slide">
         <div class="hidebutton" v-b-modal.modal4>
-          <DJSlide />
+          <TitleSlide
+                title="dj mixes"
+                image="circle3.png"
+                properties="spins white"
+                imageType="png"
+                theme="sky"
+          />
         </div>
       </slide>
       <slide :index="4" id="music" class="slide music">
         <div class="hidebutton" v-b-modal.modal5>
-          <MusicSlideM />
+          <TitleSlide
+                title="about"
+                image="rock-on.png"
+                imageType="png"
+                theme="sky"
+          />
         </div>
       </slide>
       <slide :index="5" id="spot" class="slide">
         <div class="hidebutton" v-b-modal.modal6>
-          <SpotSlide />
+          <TitleSlide
+                title="playlists"
+                image="spotifylogo.png"
+                imageType="png"
+                theme="sky"
+          />
         </div>
       </slide>
     </carousel-3d>
@@ -106,12 +138,8 @@
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
-import StudioSlide from "@/components/StudioSlide";
-import MusicSlideM from "@/components/MusicSlideM";
-import SoloSlide from "@/components/SoloSlide";
-import MDev from "@/components/MDev";
+import TitleSlide from "@/components/TitleSlide";
 import DevNavModal from "@/components/DevNavModal";
-import DJSlide from "@/components/DJSlide";
 import DjModal from "@/components/DjModal";
 import IndyModal from "@/components/IndyModal";
 import BootstrapVue from "bootstrap-vue";
@@ -119,25 +147,19 @@ import AboutMeModal from "@/components/AboutMeModal";
 import MusicInfoModal from "@/components/MusicInfoModal";
 import StudioModal from "@/components/StudioModal";
 import SpotModal from "@/components/SpotModal";
-import SpotSlide from "@/components/SpotSlide";
 
 export default {
   name: "Carousel",
   components: {
     Carousel3d,
+    TitleSlide,
     Slide,
-    SoloSlide,
-    DJSlide,
-    MusicSlideM,
-    StudioSlide,
     BootstrapVue,
-    MDev,
     DjModal,
     IndyModal,
     StudioModal,
     MusicInfoModal,
     DevNavModal,
-    SpotSlide,
     SpotModal
   },
   data() {
@@ -173,7 +195,7 @@ export default {
 }
 
 #style-override span {
-  color: fuchsia;
+  color: white;
   font-size: 110px;
 }
 

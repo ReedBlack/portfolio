@@ -44,22 +44,44 @@
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
-              <TitleSlide title="about me" image="me.jpg" />
+              <TitleSlide
+                title="about me"
+                image="me.jpg"
+                imageType="junglephoto"
+                theme="jungle"
+                />
             </div> 
           </slide>
           <slide :index="2" id="resume" class="slide">
             <div class="hidebutton" v-b-modal.modal2>
-              <ResumeSlide />
+              <TitleSlide
+                title="resume"
+                image="Reed-Black-Resume.jpg"
+                imageType="junglephoto"
+                theme="jungle"
+                />
             </div> 
           </slide>        
-          <slide :index="1" id="music" class="slide music">
+          <slide :index="1" id="music" class="slide">
             <div class="hidebutton" v-b-modal.modal5>
-              <MusicSlide />
+              <TitleSlide
+                title="music"
+                image="rock-on-dark.png"
+                linkTo="./Music"
+                imageType="png"
+                theme="jungle"
+                />
             </div>
           </slide>         
           <slide :index="3" id="projectlink" class="slide">
             <div class="hidebutton" v-b-modal.modal7>
-              <ProjectsLink />
+              <TitleSlide
+                title="projects"
+                image="hammer.png"
+                linkTo="./Projects"
+                imageType="png"
+                theme="jungle"
+                />
             </div>
           </slide>
         </carousel-3d>
@@ -68,22 +90,10 @@
 
 <script>
 import { Carousel3d, Slide } from "vue-carousel-3d";
-import ResumeSlide from "@/components/ResumeSlide";
-import TacoSlide from "@/components/TacoSlide";
-import MusicSlide from "@/components/MusicSlide";
 import TitleSlide from "@/components/TitleSlide";
-import AboutMeSlide from "@/components/AboutMeSlide";
 import BootstrapVue from "bootstrap-vue";
 import AboutMeModal from "@/components/AboutMeModal";
 import ResumeModal from "@/components/ResumeModal";
-import TacoModal from "@/components/TacoModal";
-import LivewyreModal from "@/components/LivewyreModal";
-import LivewyreSlide from "@/components/LivewyreSlide";
-import MixtapSlide from "@/components/MixtapSlide";
-import InkswellSlide from "@/components/InkswellSlide";
-import InkswellModal from "@/components/InkswellModal";
-import MixtapModal from "@/components/MixtapModal";
-import ProjectsLink from "@/components/ProjectsLink";
 
 export default {
   name: "Carousel",
@@ -93,21 +103,9 @@ export default {
     Carousel3d,
     TitleSlide,
     Slide,
-    AboutMeSlide,
-    ResumeSlide,
-    MusicSlide,
-    TacoSlide,
     BootstrapVue,
     AboutMeModal,
     ResumeModal,
-    TacoModal,
-    LivewyreSlide,
-    LivewyreModal,
-    MixtapSlide,
-    MixtapModal,
-    InkswellSlide,
-    InkswellModal,
-    ProjectsLink
   },
   data() {
     return {
@@ -134,6 +132,16 @@ export default {
 </script>
 
 <style>
+#home-override span {
+    font-size: 110px;
+    background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
+    background-size: 150%;
+    background-position: top;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
 #home-override span {
   font-size: 100px;
 }
@@ -182,7 +190,6 @@ export default {
   min-width: 100%;
   box-sizing: border-box;
   z-index: 5;
-  background: url("https://media.freestocktextures.com/cache/3c/c7/3cc78f214da259b2893d8fbf508a3fef.jpg");
   background-repeat: repeat-x;
   background-size: cover;
   color: transparent;
@@ -190,8 +197,6 @@ export default {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
   transform: rotate(5deg);
 }
 

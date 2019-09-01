@@ -13,21 +13,21 @@
     <template id="center">
       <MCarousel class="cards" style="z-index:2;" />
     </template>   
-    <MFooter class="bottom" />
+    <Footer class="bottom" theme="sky" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import MTitle from "@/components/MTitle";
-import MFooter from "@/components/MFooter";
+import Footer from "@/components/Footer";
 import MCarousel from "@/components/MCarousel";
 
 export default {
   name: "home",
   components: {
     MTitle,
-    MFooter,
+    Footer,
     MCarousel
   }
 };
