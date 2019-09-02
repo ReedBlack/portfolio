@@ -32,15 +32,15 @@
         </b-modal>
         <carousel-3d id="shorter" style="height:113%; margin-top: 50px;"
         :controls-visible="true"
-        :controls-width="80"
+        :controls-width="100"
         :controls-height="0"
         :height="310"
         :width="255"
         :clickable="true"
-        :display="3"
+        :display="5"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="720"
+        :space="580"
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
@@ -64,12 +64,23 @@
           </slide>
           <slide :index="1" id="music" class="slide">
             <div class="hidebutton" v-b-modal.modal5>
-              <TitleSlide
-                title="music"
-                image="rock-on-dark.png"
-                linkTo="./Music"
-                imageType="png"
-                theme="jungle"
+                <TitleSlide
+                        title="music"
+                        image="rock-on-dark.png"
+                        linkTo="./Music"
+                        imageType="png"
+                        theme="jungle"
+                />
+            </div>
+          </slide>
+          <slide :index="4" id="art" class="slide">
+            <div class="hidebutton">
+                <TitleSlide
+                        title="art"
+                        image="art.png"
+                        linkTo="./Art"
+                        imageType="png"
+                        theme="jungle"
                 />
             </div>
           </slide>

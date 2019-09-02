@@ -1,6 +1,6 @@
 <template>
   <div id="home-override" class="home page" style="backgroundColor: 'theme.jungle.backgroundImage'">
-    <Title class="title" style="z-index:0;"  />
+    <Title class="title" title="Reed Black" style="z-index:0;"  />
     <Carousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="jungle" />
   </div>

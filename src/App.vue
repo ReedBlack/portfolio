@@ -34,6 +34,15 @@ export default {};
   background-size: cover;
 }
 
+.art {
+  height: 100%;
+  width: 100%;
+  background-image: url("/underwater.jpg");
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+}
+
 .projects {
   height: 100%;
   width: 100%;

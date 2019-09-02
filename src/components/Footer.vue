@@ -1,5 +1,4 @@
 <template>
-
     <nav class="site-nav--social">
         <a href="http://www.github.com/ReedBlack" target="blank"><i class="fab fa-github" :class="theme"></i></a>
         <br>
@@ -7,7 +6,6 @@
         <br>
         <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
     </nav>
-
 </template>
 
 <script>
@@ -18,16 +16,26 @@ export default {
 </script>
 
 <style>
+
+.fa-linkedin {
+    margin-right: 7px;
+}
+
+.fa-github {
+    margin-right: 7px;
+}
+
 .site-nav--social {
   display: flex;
+  align-self: flex-end;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   z-index: 200;
   line-height: 12px;
   bottom: 1;
   right: 0;
-  margin-right: 12px;
+  margin-right: 20px;
   text-decoration-line: none;
   font-size: 7.5vh;
   width: 100%;
@@ -37,6 +45,7 @@ export default {
   .site-nav--social {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -46,18 +55,6 @@ export default {
 }
 a {
   text-decoration: none;
-}
-
-.fab {
-  /*text-decoration: none;*/
-  /*padding: 2%;*/
-  /*background-repeat: repeat-x;*/
-  /*background-size: cover;*/
-  /*color: transparent;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-webkit-background-clip: text;*/
-  /*-moz-background-clip: text;*/
-  /*background-clip: text;*/
 }
 
 .jungle {
@@ -96,5 +93,20 @@ a {
   background-clip: text;
   -webkit-filter: drop-shadow(1px 2px 0px orangered);
   filter: drop-shadow(1px 2px 0px orangered);
+}
+
+.water {
+    text-decoration: none;
+    background: url("/water-texture.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    /*width: 100%;*/
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-filter: drop-shadow(1px 2px 0px #A4C9CB);
+    filter: drop-shadow(1px 2px 0px #A4C9CB);
 }
 </style>

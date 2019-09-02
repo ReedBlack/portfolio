@@ -108,4 +108,19 @@ img {
   -webkit-filter: drop-shadow(1px 2px 0px orangered);
   filter: drop-shadow(1px 2px 0px orangered);
 }
+
+.water {
+    font-family: "Permanent Marker", cursive;
+    background: url("/water-texture.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    width: 100%;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-filter: drop-shadow(1px 2px 0px #A4C9CB);
+    filter: drop-shadow(1px 2px 0px #A4C9CB);
+}
 </style>

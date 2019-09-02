@@ -1,22 +1,20 @@
 <template>
   <div id="project-override" class="projects page">
-    <div>
-      <PTitle class="title" style="z-index:0;" />
-    </div>
+    <Title class="title" title="projects" titleTheme="lava" />
     <PCarousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="lava" />
   </div>
 </template>
 
 <script>
-import PTitle from "@/components/projects/PTitle";
+import Title from "@/components/Title";
 import Footer from "@/components/Footer";
 import PCarousel from "@/components/projects/PCarousel";
 
 export default {
   name: "home",
   components: {
-    PTitle,
+    Title,
     Footer,
     PCarousel
   }
@@ -25,7 +23,7 @@ export default {
 
 <style scoped>
 
-.projectsw {
+.projects {
   height: 100%;
 }
 

@@ -1,5 +1,4 @@
 <template>
-
   <div id="turnt">
     <b-modal
         :header-bg-variant="headerBgVariant"
@@ -59,17 +58,17 @@
     id="modal6">
       <SpotModal />
     </b-modal>
-    <carousel-3d id="music-c" style="height:113%; margin-top: 50px;"
+    <carousel-3d id="music-c" style="height:113%; margin-top: 60px;"
     :controls-visible="true"
-    :controls-width="60"
+    :controls-width="100"
     :controls-height="0"
     :height="310"
     :width="255"
-    :display="3"
+    :display="5"
     :perspective="200"
     :clickable="true"
     :inverse-scaling="1500"
-    :space="720"
+    :space="500"
     >
       <slide :index="0" id="solo-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal7>
@@ -144,7 +143,6 @@ import DevNavModal from "@/components/DevNavModal";
 import DjModal from "@/components/DjModal";
 import IndyModal from "@/components/IndyModal";
 import BootstrapVue from "bootstrap-vue";
-import AboutMeModal from "@/components/AboutMeModal";
 import MusicInfoModal from "@/components/MusicInfoModal";
 import StudioModal from "@/components/StudioModal";
 import SpotModal from "@/components/SpotModal";

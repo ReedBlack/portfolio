@@ -1,21 +1,20 @@
 <template>
   <div id="style-override" class="music page">
-    <MTitle class="title" style="z-index:0;"  />
+    <Title class="title" titleTheme="sky" title="music" />
     <MCarousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="sky" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import MTitle from "@/components/MTitle";
+import Title from "@/components/Title";
 import Footer from "@/components/Footer";
 import MCarousel from "@/components/MCarousel";
 
 export default {
   name: "home",
   components: {
-    MTitle,
+    Title,
     Footer,
     MCarousel
   }

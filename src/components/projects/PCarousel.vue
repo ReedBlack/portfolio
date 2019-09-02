@@ -41,14 +41,14 @@
         <carousel-3d id="project-carousel" style="height:113%; margin-top: 50px;"
         :controls-visible="true"
         :controls-width="100"
-        :display="3"
+        :display="5"
         :controls-height="0"
         :height="310"
         :width="255"
         :clickable="true"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="720"
+        :space="580"
         >
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
