@@ -83,7 +83,6 @@ img {
 
 .sky {
   background-color: white;
-    /*background-color: url("https://www.pngkey.com/png/detail/32-323818_smoke-png-image-free-download-picture-smokes-smoke.png");*/
   -webkit-filter: drop-shadow(0px -1px 2px #14568F);
   filter: drop-shadow(0px -1px 2px #14568F);
   text-decoration: none;
