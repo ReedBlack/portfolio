@@ -32,12 +32,15 @@ export default {
 }
 
 h3 {
-  font-family: "Merienda", cursive;
+  /*font-family: "Merienda", cursive;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Rock Salt', cursive;
   width: 195px;
   margin-top: -27px;
   margin-left: 18px;
-  font-size: 4vh;
-  background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
+  font-size: 3vh;
+  background: url("/leaf-texture.jpg");
   background-repeat: repeat-x;
   background-size: cover;
   color: transparent;
@@ -49,13 +52,16 @@ h3 {
   filter: drop-shadow(0px 0px 1px rgb(99, 59, 25));
 }
 h1 {
-  font-family: "Merienda", cursive;
+  /*font-family: "Merienda", cursive;*/
+  /*font-family: 'Amatic SC', cursive;*/
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Rock Salt', cursive;
   margin-top: 52px;
   font-weight: bold;
-  font-size: 11.9vh;
-  letter-spacing: 0.04vw;
+  font-size: 10vh;
+  letter-spacing: 0.01vw;
   text-align: center;
-    background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
+  background: url("/leaf-texture.jpg");
   position: absolute;
   align-self: center;
   transition: all 0.1s ease-in-out 0s;
@@ -75,7 +81,7 @@ h1 {
   margin-top: 4%;
   flex-direction: column;
   width: 100%;
-  height: 45%;
+  /*height: 15%;*/
 }
 
 a:hover {

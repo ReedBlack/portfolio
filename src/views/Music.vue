@@ -1,18 +1,7 @@
 <template>
   <div id="style-override" class="music page">
-    <div>
-      <MTitle class="title" style="z-index:0;"  />
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <template id="center">
-      <MCarousel class="cards" style="z-index:2;" />
-    </template>   
+    <MTitle class="title" style="z-index:0;"  />
+    <MCarousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="sky" />
   </div>
 </template>
@@ -34,16 +23,11 @@ export default {
 </script>
 
 <style scoped>
-#center {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+.music {
+  height: 100%;
 }
-.cards {
-  align-self: center;
-}
+
 .bottom {
   bottom: 0;
 }

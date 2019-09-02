@@ -3,7 +3,7 @@
     <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
       <h3 class="contact">contact</h3>
     </a>
-    <h1 class="raise">Reed blacK</h1>
+    <h1 class="raise">projects</h1>
   </div>
 </template>
 
@@ -36,7 +36,7 @@ h3 {
   width: 175px;
   margin-top: -27px;
   margin-left: 18px;
-  font-size: 4vh;
+  font-size: 3vh;
   background: url("/lavabackground.jpg");
   background-repeat: repeat-x;
   background-size: 120%;
@@ -52,7 +52,7 @@ h1 {
   font-family: "Bowlby One SC", cursive;
   margin-top: 52px;
   font-weight: bold;
-  font-size: 13.9vh;
+  font-size: 11.9vh;
   letter-spacing: 0.04vw;
   text-align: center;
   position: absolute;

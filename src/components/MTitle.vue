@@ -3,15 +3,15 @@
     <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
       <h3 class="contact">contact</h3>
     </a>
-   
-    <h1 class="raise">Reed Black</h1>
+
+    <h1 class="raise">music</h1>
   </div>
 </template>
 
 <style scoped>
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 17.9vw !important;
+    font-size: 13.9vw !important;
     margin-top: 28px !important;
   }
   h3 {
@@ -62,6 +62,6 @@ h1 {
   margin-top: 4%;
   flex-direction: column;
   width: 100%;
-  height: 45%;
+  height: 15%;
 }
 </style>

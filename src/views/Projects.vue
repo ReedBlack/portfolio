@@ -1,18 +1,9 @@
 <template>
-  <div id="project-override" class="projects page">     
+  <div id="project-override" class="projects page">
     <div>
       <PTitle class="title" style="z-index:0;" />
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <template id="center">
-      <PCarousel class="cards" style="z-index:2;" />
-    </template>   
+    <PCarousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="lava" />
   </div>
 </template>
@@ -33,16 +24,11 @@ export default {
 </script>
 
 <style scoped>
-#center {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
+.projectsw {
+  height: 100%;
 }
-.cards {
-  align-self: center;
-}
+
 .bottom {
   bottom: 0;
 }

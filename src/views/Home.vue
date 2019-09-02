@@ -1,18 +1,7 @@
 <template>
   <div id="home-override" class="home page" style="backgroundColor: 'theme.jungle.backgroundImage'">
-    <div >
-      <Title class="title" style="z-index:0;"  />
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <template>
-      <Carousel class="cards" style="z-index:2;" />
-    </template>
+    <Title class="title" style="z-index:0;"  />
+    <Carousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="jungle" />
   </div>
 </template>

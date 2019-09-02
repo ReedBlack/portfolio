@@ -1,12 +1,12 @@
 <template>
   <div>
     <router-link v-if="linkTo" :to="linkTo">
-      <figure>           
+      <figure>
           <img :id="imageType" :class="properties" :src="image" >
           <figcaption id="bottom" :class="theme">{{title}}</figcaption>
       </figure>
     </router-link >
-    <figure v-if="!linkTo">           
+    <figure v-if="!linkTo">
         <img :id="imageType" :class="properties" :src="image" >
         <figcaption id="bottom" :class="theme">{{title}}</figcaption>
     </figure>
@@ -68,7 +68,7 @@ img {
 }
 
 .jungle {
-  background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
+  background: url("/leaf-texture.jpg");
   -webkit-filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
   filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
   text-decoration: none;
@@ -82,9 +82,10 @@ img {
 }
 
 .sky {
-    background: url("https://www.pngkey.com/png/detail/32-323818_smoke-png-image-free-download-picture-smokes-smoke.png");
-  -webkit-filter: drop-shadow(0px -1px 2px silver);
-  filter: drop-shadow(0px -1px 2px silver);
+  background-color: white;
+    /*background-color: url("https://www.pngkey.com/png/detail/32-323818_smoke-png-image-free-download-picture-smokes-smoke.png");*/
+  -webkit-filter: drop-shadow(0px -1px 2px #14568F);
+  filter: drop-shadow(0px -1px 2px #14568F);
   text-decoration: none;
   background-repeat: repeat-x;
   background-size: cover;

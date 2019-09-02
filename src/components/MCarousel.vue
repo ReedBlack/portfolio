@@ -1,5 +1,5 @@
 <template>
-    
+
   <div id="turnt">
     <b-modal
         :header-bg-variant="headerBgVariant"
@@ -13,7 +13,7 @@
       >
       <MusicInfoModal />
     </b-modal>
-    <b-modal 
+    <b-modal
         :header-bg-variant="headerBgVariant"
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
@@ -26,7 +26,7 @@
         :header-bg-variant="headerBgVariant"
         :hide-footer="true"
         :body-bg-variant="bodyBgVariant"
-        :body-text-variant="bodyTextVariant"   
+        :body-text-variant="bodyTextVariant"
         size="sm"
         id="modal2"
     >
@@ -59,16 +59,17 @@
     id="modal6">
       <SpotModal />
     </b-modal>
-    <carousel-3d id="music-c" style="height:70%;" 
-    :controls-visible="true" 
+    <carousel-3d id="music-c" style="height:113%; margin-top: 50px;"
+    :controls-visible="true"
     :controls-width="60"
     :controls-height="0"
-    :height="325" 
-    :width="255" 
+    :height="310"
+    :width="255"
     :display="3"
     :perspective="200"
     :clickable="true"
-    :inverse-scaling="1500" :space="720"
+    :inverse-scaling="1500"
+    :space="720"
     >
       <slide :index="0" id="solo-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal7>
@@ -78,7 +79,7 @@
                 imageType="png"
                 theme="sky"
           />
-        </div> 
+        </div>
       </slide>
       <slide :index="1" id="dev" class="slide">
         <div class="hidebutton" v-b-modal.modal2>
@@ -89,7 +90,7 @@
                 linkTo="/"
                 theme="sky"
           />
-        </div> 
+        </div>
       </slide>
       <slide :index="2" id="studio-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal3>
@@ -200,7 +201,7 @@ export default {
 }
 
 #music-c {
-  width: 70%;
+  width: 82%;
   margin-top: -1%;
 }
 #ableton,

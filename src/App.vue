@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <transition name="router-anim" 
+    <transition name="router-anim"
     enter-active-class="animated bounceInDown"
-    leave-active-class="animated hinge" 
+    leave-active-class="animated hinge"
     >
       <router-view/>
     </transition>
@@ -20,7 +20,7 @@ export default {};
 .home {
   height: 100%;
   width: 100%;
-  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b5eed03-3715-42fd-8716-9b189aa554ad/dancgdl-62c18593-7e18-4d8e-a7c0-42e34ac515c8.jpg/v1/fill/w_1280,h_853,q_75,strp/jungle_background_by_papillonstudio_dancgdl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODUzIiwicGF0aCI6IlwvZlwvNWI1ZWVkMDMtMzcxNS00MmZkLTg3MTYtOWIxODlhYTU1NGFkXC9kYW5jZ2RsLTYyYzE4NTkzLTdlMTgtNGQ4ZS1hN2MwLTQyZTM0YWM1MTVjOC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.g3bCY1GwWglBnp6LuEEpndIGzWTSxHNBnkJIDyf6L34");
+  background-image: url("/jungle.jpg");
   position: fixed;
   background-size: cover;
 }
@@ -62,7 +62,10 @@ export default {};
 }
 
 .page {
-  position: fixed;
+  /*position: fixed;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 a:hover {

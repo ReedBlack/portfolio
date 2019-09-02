@@ -38,28 +38,28 @@
         >
             <InkswellModal />
         </b-modal>
-        <carousel-3d id="project-carousel" style="height:70%;" 
-        :controls-visible="true" 
+        <carousel-3d id="project-carousel" style="height:113%; margin-top: 50px;"
+        :controls-visible="true"
         :controls-width="100"
         :display="3"
         :controls-height="0"
-        :height="325" 
-        :width="280" 
+        :height="310"
+        :width="255"
         :clickable="true"
         :perspective="200"
-        :inverse-scaling="1500" 
+        :inverse-scaling="1500"
         :space="720"
-        >        
+        >
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
                     <TitleSlide
                         title="home"
-                        image="tilde.png"
+                        image="tildeorange.png"
                         imageType="png"
                         linkTo="/"
                         theme="lava"
                     />
-                </div> 
+                </div>
             </slide>
             <slide :index="1" id="live" class="slide">
                 <div class="hidebutton" v-b-modal.modal4>
@@ -68,7 +68,7 @@
                         image="livewire.png"
                         theme="lava"
                         properties="lava"
-                    /> 
+                    />
                 </div>
             </slide>
             <slide :index="4" id="taco" class="slide">
@@ -78,7 +78,7 @@
                         image="taco.png"
                         theme="lava"
                         properties="lava spins"
-                    /> 
+                    />
                 </div>
             </slide>
             <slide :index="0" id="inkswell" class="slide">
@@ -88,7 +88,7 @@
                         image="inkswell.png"
                         theme="lava"
                         properties="lava"
-                    /> 
+                    />
                 </div>
             </slide>
             <slide :index="3" id="mixtap" class="slide">
@@ -99,7 +99,7 @@
                         theme="lava"
                         properties="lava"
                         imageType="lavaphoto"
-                    /> 
+                    />
                 </div>
             </slide>
         </carousel-3d>
@@ -164,7 +164,7 @@ export default {
 }
 
 #project-carousel {
-    width: 65%;
+    width: 82%;
 }
 
 @media only screen and (max-width: 600px) {

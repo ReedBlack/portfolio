@@ -1,6 +1,6 @@
-<template>    
+<template>
     <div id="turnt">
-        <b-modal 
+        <b-modal
             :header-bg-variant="headerBgVariant"
             :hide-footer="true"
             :body-bg-variant="bodyBgVariant"
@@ -30,16 +30,16 @@
         >
           <MixtapModal />
         </b-modal>
-        <carousel-3d id="shorter" style="height:70%;" 
-        :controls-visible="true" 
+        <carousel-3d id="shorter" style="height:113%; margin-top: 50px;"
+        :controls-visible="true"
         :controls-width="80"
         :controls-height="0"
-        :height="325" 
-        :width="255" 
+        :height="310"
+        :width="255"
         :clickable="true"
         :display="3"
         :perspective="200"
-        :inverse-scaling="1500" 
+        :inverse-scaling="1500"
         :space="720"
         >
           <slide :index="0" id="about" class="slide">
@@ -50,7 +50,7 @@
                 imageType="junglephoto"
                 theme="jungle"
                 />
-            </div> 
+            </div>
           </slide>
           <slide :index="2" id="resume" class="slide">
             <div class="hidebutton" v-b-modal.modal2>
@@ -60,8 +60,8 @@
                 imageType="junglephoto"
                 theme="jungle"
                 />
-            </div> 
-          </slide>        
+            </div>
+          </slide>
           <slide :index="1" id="music" class="slide">
             <div class="hidebutton" v-b-modal.modal5>
               <TitleSlide
@@ -72,7 +72,7 @@
                 theme="jungle"
                 />
             </div>
-          </slide>         
+          </slide>
           <slide :index="3" id="projectlink" class="slide">
             <div class="hidebutton" v-b-modal.modal7>
               <TitleSlide
@@ -98,8 +98,6 @@ import ResumeModal from "@/components/ResumeModal";
 export default {
   name: "Carousel",
   components: {
-    // "carousel-3d": Carousel3d.Carousel3d,
-    // slide: Carousel3d.Slide,
     Carousel3d,
     TitleSlide,
     Slide,
@@ -147,9 +145,9 @@ export default {
 }
 
 #shorter {
-  width: 70%;
+  width: 82%;
   padding-bottom: 10px;
-  
+
 }
 @media only screen and (max-width: 600px) {
   #shorter {

@@ -1,5 +1,5 @@
 <template>
-   
+
     <nav class="site-nav--social">
         <a href="http://www.github.com/ReedBlack" target="blank"><i class="fab fa-github" :class="theme"></i></a>
         <br>
@@ -25,12 +25,12 @@ export default {
   align-items: center;
   z-index: 200;
   line-height: 12px;
-  position: fixed;
   bottom: 1;
   right: 0;
   margin-right: 12px;
   text-decoration-line: none;
   font-size: 7.5vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -49,19 +49,19 @@ a {
 }
 
 .fab {
-  text-decoration: none;
-  padding: 2%;
-  background-repeat: repeat-x;
-  background-size: cover;
-  color: transparent;
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  /*text-decoration: none;*/
+  /*padding: 2%;*/
+  /*background-repeat: repeat-x;*/
+  /*background-size: cover;*/
+  /*color: transparent;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-webkit-background-clip: text;*/
+  /*-moz-background-clip: text;*/
+  /*background-clip: text;*/
 }
 
 .jungle {
-  background: url("https://cdn.pixabay.com/photo/2016/11/14/22/52/james-1824888_960_720.jpg");
+  background: url("/leaf-texture.jpg");
   -webkit-filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
   filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
   text-decoration: none;
@@ -75,13 +75,9 @@ a {
 }
 
 .sky {
-  background: url("https://www.pngkey.com/png/detail/32-323818_smoke-png-image-free-download-picture-smokes-smoke.png");
-  -webkit-filter: drop-shadow(0px -1px 2px silver);
-  filter: drop-shadow(0px -1px 2px silver);
-  text-decoration: none;
-  background-repeat: repeat-x;
-  background-size: cover;
-  color: transparent;
+  background-color: white;
+  -webkit-filter: drop-shadow(0px -1px 2px #14568F);
+  filter: drop-shadow(0px -1px 2px #14568F);
   -webkit-font-smoothing: antialiased;
   -webkit-background-clip: text;
   -moz-background-clip: text;
