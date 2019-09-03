@@ -2,7 +2,7 @@
   <div id="project-override" class="projects page">
     <Title class="title" title="projects" titleTheme="lava" />
     <PCarousel class="cards" style="z-index:2;" />
-    <Footer class="bottom" theme="lava" />
+    <Footer class="bottom" theme="lava" color="orange" isSelected="true"/>
   </div>
 </template>
 
@@ -17,6 +17,11 @@ export default {
     Title,
     Footer,
     PCarousel
+  },
+  data () {
+    return {
+      isSelected: false
+    }
   }
 };
 </script>

@@ -40,7 +40,7 @@
         :display="5"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="580"
+        :space="500"
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
@@ -156,7 +156,7 @@ export default {
 }
 
 #shorter {
-  width: 82%;
+  width: 100%;
   padding-bottom: 10px;
 
 }

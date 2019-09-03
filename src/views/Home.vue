@@ -1,8 +1,8 @@
 <template>
-  <div id="home-override" class="home page" style="backgroundColor: 'theme.jungle.backgroundImage'">
+  <div id="home-override" class="home page">
     <Title class="title" title="Reed Black" style="z-index:0;"  />
     <Carousel class="cards" style="z-index:2;" />
-    <Footer class="bottom" theme="jungle" />
+    <Footer class="bottom" theme="jungle" color="lime" isSelected="true" />
   </div>
 </template>
 
@@ -17,6 +17,11 @@ export default {
     Title,
     Carousel,
     Footer
+  },
+  data () {
+    return {
+      isSelected: false
+    }
   }
 };
 </script>

@@ -1,21 +1,61 @@
 <template>
-    <nav class="site-nav--social">
-        <a href="http://www.github.com/ReedBlack" target="blank"><i class="fab fa-github" :class="theme"></i></a>
-        <br>
-        <a href="https://www.linkedin.com/in/reed-black" target="blank"><i class="fab fa-linkedin" :class="theme"></i></a>
-        <br>
-        <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
-    </nav>
+    <div class="footer-flex">
+        <nav class="site-nav--social">
+            <a href="http://www.github.com/ReedBlack" target="blank"><i class="fab fa-github" :class="theme"></i></a>
+            <br>
+            <a href="https://www.linkedin.com/in/reed-black" target="blank"><i class="fab fa-linkedin" :class="theme"></i></a>
+            <br>
+            <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
+        </nav>
+        <div class="svg-container">
+            <Earth :color="color" :isSelected="isSelected"></Earth>
+            <Air :color="color" :isSelected="isSelected"></Air>
+            <Fire :color="color" :isSelected="isSelected"></Fire>
+            <Water :color="color" :isSelected="isSelected"></Water>
+        </div>
+    </div>
 </template>
 
 <script>
+import Air from "@/svg/Air";
+import Earth from "@/svg/Earth";
+import Fire from "@/svg/Fire";
+import Water from "@/svg/Water";
+
 export default {
+
   name: "Footer",
-  props: ["theme"]
+  components: {
+    Earth,
+    Air,
+    Fire,
+    Water
+  },
+  props: ["theme", "selectEarth", "isSelected", "color"],
+  // data () {
+  //   return {
+  //     isSelected: false
+  //   }
+  // }
 }
+
 </script>
 
 <style>
+#svg {
+    padding: 5px;
+}
+
+.svg-container {
+    margin-right: 15px;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .fa-linkedin {
     margin-right: 7px;
@@ -38,7 +78,7 @@ export default {
   margin-right: 20px;
   text-decoration-line: none;
   font-size: 7.5vh;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,7 +140,6 @@ a {
     background: url("/water-texture.jpg");
     background-repeat: repeat-x;
     background-size: cover;
-    /*width: 100%;*/
     color: transparent;
     -webkit-font-smoothing: antialiased;
     -webkit-background-clip: text;

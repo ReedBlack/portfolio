@@ -1,8 +1,8 @@
 <template>
   <div id="style-override" class="music page">
     <Title class="title" titleTheme="sky" title="music" />
-    <MCarousel class="cards" style="z-index:2;" />
-    <Footer class="bottom" theme="sky" />
+    <MCarousel class="cards music-carousel" style="z-index:2;" />
+    <Footer class="bottom" theme="sky" color="white" isSelected="true"/>
   </div>
 </template>
 
@@ -17,11 +17,20 @@ export default {
     Title,
     Footer,
     MCarousel
+  },
+  data () {
+    return {
+      isSelected: false
+    }
   }
 };
 </script>
 
 <style scoped>
+.music-carousel {
+  margin-top: 45px;
+}
+
 
 .music {
   height: 100%;

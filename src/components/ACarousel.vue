@@ -38,7 +38,7 @@
         >
             <InkswellModal />
         </b-modal>
-        <carousel-3d id="project-carousel" style="height:113%; margin-top: 50px;"
+        <carousel-3d id="art-carousel" style="height:113%; margin-top: 50px;"
                      :controls-visible="true"
                      :controls-width="100"
                      :display="5"
@@ -48,7 +48,7 @@
                      :clickable="true"
                      :perspective="200"
                      :inverse-scaling="1500"
-                     :space="580"
+                     :space="500"
         >
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
@@ -161,12 +161,12 @@
         -moz-background-clip: text;
     }
 
-    #project-carousel {
-        width: 92%;
+    #art-carousel {
+        width: 100%;
     }
 
     @media only screen and (max-width: 600px) {
-        #project-carousel {
+        #art-carousel {
             margin-top: -70px;
             width: 100%;
         }

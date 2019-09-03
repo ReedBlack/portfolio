@@ -48,7 +48,7 @@
         :clickable="true"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="580"
+        :space="500"
         >
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
@@ -164,7 +164,7 @@ export default {
 }
 
 #project-carousel {
-    width: 82%;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {

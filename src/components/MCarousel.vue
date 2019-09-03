@@ -82,7 +82,7 @@
       <slide :index="0" id="solo-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal7>
           <TitleSlide
-                title="indie tracks"
+                title="originals"
                 image="keys.png"
                 imageType="png"
                 theme="sky"
@@ -166,6 +166,7 @@ import MusicInfoModal from "@/components/MusicInfoModal";
 import StudioModal from "@/components/StudioModal";
 import SpotModal from "@/components/SpotModal";
 import OutsideInModal from "@/components/OutsideInModal";
+import Earth from "@/svg/Earth";
 
 export default {
   name: "Carousel",
@@ -173,6 +174,7 @@ export default {
     Carousel3d,
     TitleSlide,
     Slide,
+    Earth,
     BootstrapVue,
     DjModal,
     IndyModal,
@@ -220,7 +222,7 @@ export default {
 }
 
 #music-c {
-  width: 82%;
+  width: 100%;
   margin-top: -1%;
 }
 #ableton,

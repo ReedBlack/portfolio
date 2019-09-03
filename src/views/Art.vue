@@ -2,7 +2,7 @@
     <div id="style-override" class="art page">
         <Title class="title" titleTheme="water" title="art" />
         <ACarousel class="cards" style="z-index:2;" />
-        <Footer class="bottom" theme="water" />
+        <Footer class="bottom" theme="water" color="lavender" isSelected="true"/>
     </div>
 </template>
 
@@ -17,6 +17,11 @@
       Title,
       Footer,
       ACarousel
+    },
+    data () {
+      return {
+        isSelected: false
+      }
     }
   };
 </script>
