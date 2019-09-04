@@ -2,7 +2,7 @@
   <div id="home-override" class="home page">
     <Title class="title" title="Reed Black" style="z-index:0;"  />
     <Carousel class="cards" style="z-index:2;" />
-    <Footer class="bottom" theme="jungle" color="lime" isSelected="true" />
+    <Footer class="bottom" theme="jungle" color="lime" />
   </div>
 </template>
 
@@ -18,11 +18,6 @@ export default {
     Carousel,
     Footer
   },
-  data () {
-    return {
-      isSelected: false
-    }
-  }
 };
 </script>
 

@@ -2,7 +2,7 @@
   <div id="style-override" class="music page">
     <Title class="title" titleTheme="sky" title="music" />
     <MCarousel class="cards music-carousel" style="z-index:2;" />
-    <Footer class="bottom" theme="sky" color="white" isSelected="true"/>
+    <Footer class="bottom" theme="sky" color="white"/>
   </div>
 </template>
 
@@ -18,11 +18,6 @@ export default {
     Footer,
     MCarousel
   },
-  data () {
-    return {
-      isSelected: false
-    }
-  }
 };
 </script>
 

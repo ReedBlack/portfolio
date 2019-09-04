@@ -32,11 +32,6 @@
 <script>
 export default {
   props: ['color', 'onClick', 'isSelected'],
-  data () {
-    return {
-      isSelected: false
-    }
-  }
 }
 </script>
 

@@ -22,6 +22,11 @@ export default {
     return {
       mixes: [
         {
+          title: "Yoga Mix",
+          link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Feb2019YogaMix.m4a",
+          date: 'Feb 2019'
+        },
+        {
           title: "Freestyle at Emily's",
           link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Reed+Black+at+Emily's+101316.mp3",
           date: 'Nov 2017'
@@ -32,7 +37,7 @@ export default {
           date: 'June 2016',
         },
         {
-          title: "Yoga Promo Mix",
+          title: "Yoga Mix",
           link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Dec2017++Yoga+Mix.m4a",
           date: 'Dec 2017'
         },

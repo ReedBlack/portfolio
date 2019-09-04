@@ -8,10 +8,10 @@
             <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
         </nav>
         <div class="svg-container">
-            <Earth :color="color" :isSelected="isSelected"></Earth>
-            <Air :color="color" :isSelected="isSelected"></Air>
-            <Fire :color="color" :isSelected="isSelected"></Fire>
-            <Water :color="color" :isSelected="isSelected"></Water>
+            <Earth :color="color"></Earth>
+            <Air :color="color"></Air>
+            <Fire :color="color"></Fire>
+            <Water :color="color"></Water>
         </div>
     </div>
 </template>
@@ -31,7 +31,7 @@ export default {
     Fire,
     Water
   },
-  props: ["theme", "selectEarth", "isSelected", "color"],
+  props: ["theme", "isSelected", "color"],
   // data () {
   //   return {
   //     isSelected: false

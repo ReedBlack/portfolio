@@ -37,7 +37,7 @@ export default {};
 .art {
   height: 100%;
   width: 100%;
-  background-image: url("/underwater.jpg");
+  background-image: url("/water.jpg");
   background-position: center;
   position: fixed;
   background-size: cover;

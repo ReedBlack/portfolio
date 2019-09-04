@@ -1,6 +1,6 @@
 <template>
     <router-link to="/Art">
-        <div id="svg" class="earth-svg" :isSelected="isSelected" :class="size">
+        <div id="svg" class="earth-svg">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 515 515"
@@ -22,14 +22,11 @@
 
 <script>
   export default {
-    props: ['color', 'large', 'onClick', 'isSelected', "theme"],
+    props: ['color', 'onClick', 'isSelected'],
   }
 </script>
 
 <style>
-    .selected {
-        border: 1px solid pink;
-    }
 
     .earth-svg{
         height: 50px;
