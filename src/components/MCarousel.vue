@@ -71,13 +71,13 @@
     :controls-visible="true"
     :controls-width="100"
     :controls-height="0"
-    :height="310"
-    :width="255"
+    :height="260"
+    :width="210"
     :display="5"
     :perspective="200"
     :clickable="true"
     :inverse-scaling="1500"
-    :space="500"
+    :space="450"
     >
       <slide :index="0" id="solo-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal7>
@@ -92,10 +92,8 @@
       <slide :index="1" id="dev" class="slide">
         <div class="hidebutton" v-b-modal.modal2>
           <TitleSlide
-                title="home"
-                image="tildewhite.png"
-                imageType="png"
-                linkTo="/"
+                isEarth="true"
+                color="white"
                 theme="sky"
           />
         </div>
@@ -240,12 +238,5 @@ export default {
 
 figure:hover {
   margin-top: 10px;
-}
-
-@media only screen and (max-width: 600px) {
-  #music-c {
-    margin-top: -70px;
-    width: 100%;
-  }
 }
 </style>

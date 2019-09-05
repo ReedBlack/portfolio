@@ -1,5 +1,5 @@
 <template>
-  <div class="title">
+  <div id="title">
     <a href="mailto:black.reed.c@gmail.com?subject=from reedblack.io">
       <h3 class="contact" :class="titleTheme">contact</h3>
     </a>
@@ -19,15 +19,15 @@ export default {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 14.9vw !important;
-    margin-top: 28px !important;
+    font-size: 11.3vw !important;
+    margin-top: 18px !important;
   }
   h3 {
     font-size: 3vh;
   }
 }
 .raise:hover {
-  font-size: 15.7v;
+  font-size: 9.7v;
   transition: all 0.2s ease-in-out 0s;
   -webkit-filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
   filter: drop-shadow(0px -1px 1px rgb(99, 59, 25));
@@ -85,7 +85,7 @@ h1, .jungle {
 
 h3 {
   width: 195px;
-  margin-top: -27px;
+  margin-top: -24px;
   margin-left: 18px;
   font-size: 3vh;
   background-repeat: repeat-x;
@@ -98,9 +98,9 @@ h3 {
 
 }
 h1 {
-  margin-top: 30px;
+  margin-top: 25px;
   font-weight: bold;
-  font-size: 9.5vh;
+  font-size: 9vh;
   letter-spacing: 0.01vw;
   text-align: center;
   position: absolute;
@@ -115,11 +115,12 @@ h1 {
   background-clip: text;
 }
 
-.title {
+#title {
   display: flex;
-  margin-top: 4%;
+  margin-top: 3%;
   flex-direction: column;
   width: 100%;
+  /*height: 1px;*/
 }
 
 a:hover {

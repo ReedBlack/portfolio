@@ -43,20 +43,18 @@
         :controls-width="100"
         :display="5"
         :controls-height="0"
-        :height="310"
-        :width="255"
+        :height="260"
+        :width="210"
         :clickable="true"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="500"
+        :space="450"
         >
             <slide :index="2" id="dev" class="slide">
                 <div class="hidebutton" >
                     <TitleSlide
-                        title="home"
-                        image="tildeorange.png"
-                        imageType="png"
-                        linkTo="/"
+                        isEarth="true"
+                        color="orange"
                         theme="lava"
                     />
                 </div>

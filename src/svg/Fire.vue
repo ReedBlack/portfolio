@@ -41,19 +41,3 @@
     }
   }
 </script>
-
-<style>
-    .selected {
-        border: 1px solid pink;
-    }
-
-    .earth-svg{
-        height: 50px;
-        width: 50px;
-    }
-
-    .large {
-        height: 100%;
-        width: 100%;
-    }
-</style>

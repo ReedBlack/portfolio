@@ -43,6 +43,15 @@ export default {};
   background-size: cover;
 }
 
+.construction {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  background-position: center;
+  position: fixed;
+  background-size: cover;
+}
+
 .projects {
   height: 100%;
   width: 100%;
@@ -75,6 +84,10 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.cards {
+  /*height: 250px;*/
 }
 
 a:hover {

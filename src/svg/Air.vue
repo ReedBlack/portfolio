@@ -34,10 +34,3 @@ export default {
   props: ['color', 'onClick', 'isSelected'],
 }
 </script>
-
-<style>
-    #svg{
-        height: 50px;
-        width: 50px;
-    }
-</style>

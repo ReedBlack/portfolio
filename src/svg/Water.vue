@@ -1,5 +1,5 @@
 <template>
-    <router-link to="/Art">
+    <router-link to="/ArtConstruction">
         <div id="svg" class="earth-svg">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -25,16 +25,3 @@
     props: ['color', 'onClick', 'isSelected'],
   }
 </script>
-
-<style>
-
-    .earth-svg{
-        height: 50px;
-        width: 50px;
-    }
-
-    .large {
-        height: 100%;
-        width: 100%;
-    }
-</style>

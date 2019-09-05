@@ -6,6 +6,30 @@
           <figcaption id="bottom" :class="theme">{{title}}</figcaption>
       </figure>
     </router-link >
+    <router-link v-if="isEarth" to="/">
+      <figure>
+          <Earth :color="color" />
+          <figcaption id="bottom" :class="theme">home</figcaption>
+      </figure>
+    </router-link >
+      <router-link v-if="isAir" to="/Music">
+          <figure>
+              <Air :color="color" />
+              <figcaption id="bottom" :class="theme">music</figcaption>
+          </figure>
+      </router-link >
+      <router-link v-if="isFire" to="/Projects">
+          <figure>
+              <Fire :color="color" />
+              <figcaption id="bottom" :class="theme">projects</figcaption>
+          </figure>
+      </router-link >
+      <router-link v-if="isWater" to="/ArtConstruction">
+          <figure>
+              <Water :color="color" />
+              <figcaption id="bottom" :class="theme">art</figcaption>
+          </figure>
+      </router-link >
     <figure v-if="!linkTo">
         <img :id="imageType" :class="properties" :src="image" >
         <figcaption id="bottom" :class="theme">{{title}}</figcaption>
@@ -14,9 +38,20 @@
 </template>
 
 <script>
+import Earth from '@/svg/Earth';
+import Air from '@/svg/Air';
+import Fire from '@/svg/Fire';
+import Water from '@/svg/Water';
+
 export default {
     name: "Slide",
-    props: ["linkTo", "image", "title", "scene", "imageType", "properties", "theme"]
+    props: ["linkTo", "image", "title", "scene", "imageType", "properties", "theme", "isEarth", "isAir", "isFire", "isWater", "color"],
+    components: {
+      Earth,
+      Air,
+      Fire,
+      Water
+    }
 };
 </script>
 
@@ -45,22 +80,16 @@ img {
   box-shadow: none !important;
 }
 
-#png {
-  filter: drop-shadow(3px 3px 3px black);
-}
-
 #junglephoto {
   border: none;
   background: none;
   border-radius: 50%;
-  filter: drop-shadow(3px 3px 3px black);
 }
 
 #lavaphoto {
   border: none;
   background: none;
   border-radius: 50%;
-  filter: drop-shadow(2px 2px 2px orangered);
 }
 
 #bottom {
@@ -69,8 +98,6 @@ img {
 
 .jungle {
   background: url("/leaf-texture.jpg");
-  -webkit-filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
-  filter: drop-shadow(0px -1px 2px rgb(99, 59, 25));
   text-decoration: none;
   background-repeat: repeat-x;
   background-size: cover;
@@ -83,8 +110,6 @@ img {
 
 .sky {
   background-color: white;
-  -webkit-filter: drop-shadow(0px -1px 2px #14568F);
-  filter: drop-shadow(0px -1px 2px #14568F);
   text-decoration: none;
   background-repeat: repeat-x;
   background-size: cover;
@@ -105,8 +130,6 @@ img {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  -webkit-filter: drop-shadow(1px 2px 0px orangered);
-  filter: drop-shadow(1px 2px 0px orangered);
 }
 
 .water {
@@ -120,7 +143,5 @@ img {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    -webkit-filter: drop-shadow(1px 2px 0px #A4C9CB);
-    filter: drop-shadow(1px 2px 0px #A4C9CB);
 }
 </style>

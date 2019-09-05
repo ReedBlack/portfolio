@@ -50,14 +50,3 @@
     props: ['color', 'onClick', 'isSelected'],
   }
 </script>
-
-<style>
-    .selected {
-        border: 1px solid pink;
-    }
-
-    #svg{
-        height: 50px;
-        width: 50px;
-    }
-</style>

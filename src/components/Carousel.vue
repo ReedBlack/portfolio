@@ -30,17 +30,17 @@
         >
           <MixtapModal />
         </b-modal>
-        <carousel-3d id="shorter" style="height:113%; margin-top: 50px;"
+        <carousel-3d style="height:113%; margin-top: 50px;"
         :controls-visible="true"
         :controls-width="100"
         :controls-height="0"
-        :height="310"
-        :width="255"
+        :height="260"
+        :width="210"
         :clickable="true"
         :display="5"
         :perspective="200"
         :inverse-scaling="1500"
-        :space="500"
+        :space="400"
         >
           <slide :index="0" id="about" class="slide">
             <div class="hidebutton" v-b-modal.modal1>
@@ -65,10 +65,8 @@
           <slide :index="1" id="music" class="slide">
             <div class="hidebutton" v-b-modal.modal5>
                 <TitleSlide
-                        title="music"
-                        image="rock-on-dark.png"
-                        linkTo="./Music"
-                        imageType="png"
+                        isAir="true"
+                        color="lime"
                         theme="jungle"
                 />
             </div>
@@ -76,10 +74,10 @@
           <slide :index="4" id="art" class="slide">
             <div class="hidebutton">
                 <TitleSlide
-                        title="art"
-                        image="art.png"
-                        linkTo="./Art"
-                        imageType="png"
+
+                        isWater="true"
+
+                        color="lime"
                         theme="jungle"
                 />
             </div>
@@ -87,10 +85,8 @@
           <slide :index="3" id="projectlink" class="slide">
             <div class="hidebutton" v-b-modal.modal7>
               <TitleSlide
-                title="projects"
-                image="hammer.png"
-                linkTo="./Projects"
-                imageType="png"
+                isFire="true"
+                color="lime"
                 theme="jungle"
                 />
             </div>
@@ -162,12 +158,13 @@ export default {
 }
 @media only screen and (max-width: 600px) {
   #shorter {
-    margin-top: -70px;
+    /*margin-top: -70px;*/
     width: 100%;
   }
 }
 #music,
 #resume,
+#art,
 #about,
 #projectlink,
 .hidebutton {
@@ -183,10 +180,7 @@ export default {
   margin-top: 0px;
   padding: 17px;
 }
-.carousel-3d-container {
-  padding: 30px;
-  margin: 50px;
-}
+
 .carousel-3d-container figcaption {
   position: absolute;
   margin-top: 32px;
@@ -207,11 +201,6 @@ export default {
   -moz-background-clip: text;
   background-clip: text;
   transform: rotate(5deg);
-}
-
-.widen {
-  width: 90%;
-  background-color: silver;
 }
 
 figure:hover {

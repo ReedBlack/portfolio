@@ -7,11 +7,19 @@
             <br>
             <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
         </nav>
-        <div class="svg-container">
-            <Earth :color="color"></Earth>
-            <Air :color="color"></Air>
-            <Fire :color="color"></Fire>
-            <Water :color="color"></Water>
+        <div id="svg-container">
+            <div class="smallbox">
+                <Earth :color="color"></Earth>
+            </div>
+            <div class="smallbox">
+                <Air :color="color"></Air>
+            </div >
+            <div class="smallbox">
+                <Fire :color="color"></Fire>
+            </div>
+            <div class="smallbox">
+                <Water :color="color"></Water>
+            </div>
         </div>
     </div>
 </template>
@@ -42,12 +50,17 @@ export default {
 </script>
 
 <style>
-#svg {
-    padding: 5px;
+
+.smallbox {
+    height: 50px;
+    width: 50px;
 }
 
-.svg-container {
+#svg-container {
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-flex {
@@ -55,6 +68,8 @@ export default {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    max-height: 230px;
+    padding-bottom: 10px;
 }
 
 .fa-linkedin {
@@ -73,12 +88,9 @@ export default {
   align-items: flex-end;
   z-index: 200;
   line-height: 12px;
-  bottom: 1;
-  right: 0;
   margin-right: 20px;
   text-decoration-line: none;
-  font-size: 7.5vh;
-  /*width: 100%;*/
+  font-size: 7.0vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,6 +104,15 @@ export default {
   a {
     padding: 2.5%;
   }
+
+    .smallbox {
+        height: 32px;
+        width: 32px;
+    }
+
+    .footer-flex {
+        max-height: 200px;
+    }
 }
 a {
   text-decoration: none;
