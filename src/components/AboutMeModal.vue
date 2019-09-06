@@ -5,7 +5,7 @@
     <br><br>
     It was upon this revelation that I decided to become a developer. I have found that the creative chops I learned in the studio have benefitted my ability to solve problems with code. On the flip-side, the difficult methods I've learned with code have inspired me to take a more cerebral, methodical approach to making music. I recently finished my curriculem at Galvanize's Full Stack Web Development Immersive and am now working with Autopay in Denver as a Software Developer.
     <br><br>
-    Aside from producing and coding, I'm a DJ. For fun I love to cook, ski, camp, hike, practice yoga, and learn about all things tech. If you'd like to discuss front-end architecture, Tweezer jams, the wines of Northern Italy, fresh pow and the joys of shredding it, Tyrion Lannister, reduce(), The Spirit Realm, or how to make that song you wrote into a pulsing track, hit me up!</p>
+    Aside from producing and coding, I'm a DJ. For fun I love to cook, ski, camp, hike, practice yoga, and learn about all things tech. If you'd like to discuss front-end architecture, Tweezer jams, fresh pow and the joys of shredding it, The Spirit Realm, or how to make that song you wrote into a pulsing track, hit me up!</p>
   </div>
 </template>
 

@@ -21,7 +21,7 @@
       <router-link v-if="isFire" to="/Projects">
           <figure>
               <Fire :color="color" />
-              <figcaption id="bottom" :class="theme">projects</figcaption>
+              <figcaption id="bottom" :class="theme">tech</figcaption>
           </figure>
       </router-link >
       <router-link v-if="isWater" to="/ArtConstruction">

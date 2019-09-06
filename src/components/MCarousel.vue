@@ -101,7 +101,7 @@
       <slide :index="2" id="studio-cuts" class="slide">
         <div class="hidebutton" v-b-modal.modal3>
           <TitleSlide
-                title="stonecutter"
+                title="studio"
                 image="faders.png"
                 imageType="png"
                 theme="sky"

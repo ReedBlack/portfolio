@@ -64,20 +64,18 @@
           <slide :index="1" id="music" class="slide">
             <div class="hidebutton" v-b-modal.modal5>
                 <TitleSlide
-                        isAir="true"
-                        color="lime"
-                        theme="jungle"
+                    isAir="true"
+                    color="lime"
+                    theme="jungle"
                 />
             </div>
           </slide>
           <slide :index="4" id="art" class="slide">
             <div class="hidebutton">
                 <TitleSlide
-
-                        isWater="true"
-
-                        color="lime"
-                        theme="jungle"
+                    isWater="true"
+                    color="lime"
+                    theme="jungle"
                 />
             </div>
           </slide>

@@ -1,6 +1,6 @@
 <template>
   <div id="project-override" class="projects page">
-    <Title class="title" title="projects" titleTheme="lava" />
+    <Title class="title" title="technology" titleTheme="lava" />
     <PCarousel class="cards" style="z-index:2;" />
     <Footer class="bottom" theme="lava" color="orange"/>
   </div>
