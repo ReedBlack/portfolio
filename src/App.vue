@@ -17,6 +17,16 @@ export default {};
 
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css";
 
+#turnt {
+  max-height: 230px;
+}
+
+@media only screen and (max-width: 600px) {
+#turnt {
+  margin-top: -65px;
+}
+}
+
 .home {
   height: 100%;
   width: 100%;
@@ -61,14 +71,6 @@ export default {};
   background-size: cover;
   z-index: 1000000;
 }
-.footer {
-  align-self: flex-end;
-  bottom: 0;
-}
-
-#nav {
-  padding: 30px;
-}
 
 #nav a {
   font-weight: bold;
@@ -80,18 +82,17 @@ export default {};
 }
 
 .page {
-  /*position: fixed;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.cards {
-  /*height: 250px;*/
-}
-
 a:hover {
   border-bottom: none;
+}
+
+.carousel-3d-container{
+  /*position: fixed;*/
 }
 
 transition {

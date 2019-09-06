@@ -10,7 +10,6 @@
           <AboutMeModal />
         </b-modal>
         <b-modal
-            :body-close-label="close"
             :hide-footer="true"
             :header-bg-variant="headerBgVariant"
             :body-bg-variant="bodyBgVariant"
@@ -151,17 +150,6 @@ export default {
   font-size: 100px;
 }
 
-#shorter {
-  width: 100%;
-  padding-bottom: 10px;
-
-}
-@media only screen and (max-width: 600px) {
-  #shorter {
-    /*margin-top: -70px;*/
-    width: 100%;
-  }
-}
 #music,
 #resume,
 #art,

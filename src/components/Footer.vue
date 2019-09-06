@@ -40,11 +40,6 @@ export default {
     Water
   },
   props: ["theme", "isSelected", "color"],
-  // data () {
-  //   return {
-  //     isSelected: false
-  //   }
-  // }
 }
 
 </script>
@@ -53,6 +48,7 @@ export default {
 
 .smallbox {
     height: 50px;
+    margin-bottom: 2px;
     width: 50px;
 }
 
@@ -61,6 +57,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: -20px;
 }
 
 .footer-flex {
@@ -111,7 +108,7 @@ export default {
     }
 
     .footer-flex {
-        max-height: 200px;
+        max-height: 220px;
     }
 }
 a {

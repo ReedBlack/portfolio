@@ -1,6 +1,6 @@
 <template>
     <router-link to="/Projects">
-        <div id="svg" class="earth-svg" :isSelected="isSelected" :class="size">
+        <div id="svg" class="earth-svg">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 591 591"
@@ -33,7 +33,7 @@
 
 <script>
   export default {
-    props: ['color', 'large', 'onClick', 'isSelected', "theme"],
+    props: ['color', 'large', 'onClick', "theme"],
     data () {
       return {
         isSelected: false

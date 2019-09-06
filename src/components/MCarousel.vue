@@ -207,12 +207,6 @@ export default {
 </script>
 
 <style>
-@media only screen and (max-width: 600px) {
-  #music-c {
-    margin-top: -70px !important;
-    width: 100% !important;
-  }
-}
 
 #style-override span {
   color: white;
