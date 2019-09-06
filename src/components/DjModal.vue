@@ -27,11 +27,6 @@ export default {
           date: 'Feb 2019'
         },
         {
-          title: "Freestyle at Emily's",
-          link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Reed+Black+at+Emily's+101316.mp3",
-          date: 'Nov 2017'
-        },
-        {
           title: "2016 Summer Lounge Promo Mix",
           link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Summer+2016+Lounge+Promo+Mix.m4a",
           date: 'June 2016',
