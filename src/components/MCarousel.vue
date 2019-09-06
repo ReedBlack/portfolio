@@ -144,7 +144,6 @@
           <TitleSlide
                   title="outside-in"
                   image="arrowsin.png"
-                  imageType="png"
                   theme="sky"
           />
         </div>

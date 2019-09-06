@@ -9,7 +9,7 @@
 <script>
 import Title from "@/components/Title";
 import Footer from "@/components/Footer";
-import PCarousel from "@/components/projects/PCarousel";
+import PCarousel from "@/components/PCarousel";
 
 export default {
   name: "home",

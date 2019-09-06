@@ -69,7 +69,7 @@ export default {};
   background-position: center;
   position: fixed;
   background-size: cover;
-  z-index: 1000000;
+  /*z-index: 1000000;*/
 }
 
 #nav a {

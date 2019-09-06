@@ -183,11 +183,6 @@ export default {
     box-shadow: none;
 }
 
-.widen {
-    width: 90%;
-    background-color: orangered;
-}
-
 .slide {
     background: none;
 }
