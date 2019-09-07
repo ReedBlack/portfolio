@@ -17,10 +17,14 @@ export default {
   components: {
     AudioPlayer,
   },
-
   data() {
     return {
       mixes: [
+        {
+          title: "Ecstatic Dance Promo Mix",
+          link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Ecstatic+Dance+Sept+2019.m4a",
+          date: 'Sept 2019'
+        },
         {
           title: "Yoga Mix",
           link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Feb2019YogaMix.m4a",
