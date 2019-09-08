@@ -82,7 +82,7 @@
             <slide :index="0" id="inkswell" class="slide">
                 <div class="hidebutton" v-b-modal.modal7>
                     <TitleSlide
-                        title="inskwell"
+                        title="inkswell"
                         image="inkswell.png"
                         theme="lava"
                         properties="lava"

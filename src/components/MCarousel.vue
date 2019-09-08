@@ -108,7 +108,7 @@
           />
         </div>
       </slide>
-      <slide :index="3" id="DJ" class="slide">
+      <slide :index="5" id="DJ" class="slide">
         <div class="hidebutton" v-b-modal.modal4>
           <TitleSlide
                 title="dj mixes"
@@ -129,7 +129,7 @@
           />
         </div>
       </slide>
-      <slide :index="5" id="spot" class="slide">
+      <slide :index="3" id="spot" class="slide">
         <div class="hidebutton" v-b-modal.modal6>
           <TitleSlide
                 title="playlists"

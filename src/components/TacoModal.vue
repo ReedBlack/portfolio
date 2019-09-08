@@ -1,21 +1,9 @@
 <template>
     <div>
-        <header class="about-taco">
-          <h1 class="tacotext">About ¡taco taco!</h1>
-          <p class="tacotext">Let's be honest here- it's not the flashiest site you've ever seen, but I took the cutest taco drawing on the interwebs and I made it spin. <br><br>¡taco taco!, arguably the greatest taco generation app ever concieved by an intelligent being anywhere in the multiverse, ever, is a light app that takes the user's "feeling" and randomly generates and combines the various building blocks of a taco recipe based on user input. At the time of creation, I may have bitten off more than I could chew, as the taco-matching algorithm I was seeking to create proved to be quite the challenge. I'm glad I did though, as my taco nights haven't been the same since (and I suppose I grew as a developer in the process, too). If you feel like your taco night needs some inspiration, give it a whirl!</p>
-          <h2 class="tacotext">tech used</h2>
-          <div class="technologies">
-            <img class="tech-icon" src="/icons/vue.png" alt="VueJS">
-            <img class="tech-icon" src="/icons/HTML5.png" alt="html 5">
-            <img class="tech-icon" src="/icons/css3.png" alt="CSS 3">
-            <img class="tech-icon" src="/icons/cy.png" alt="Cypress">    
-          </div>
-        </header>
-        <div class="container">
-          <img id="big-taco" src="/taco-taco.gif" alt="">
-        </div>
-        <a href="https://taco-x-taco.firebaseapp.com/" target="blank"><b-button >Live Site</b-button></a>
-        <a href="https://github.com/ReedBlack/taco-taco" target="blank"><b-button >Github</b-button></a>
+      <h1 class="tacotext">About ¡taco taco!</h1>
+      <p>Check back soon! ¡taco taco! is my current passion project and my first major post-tech-education project. It aims to evolve the ways we conceive recipes by harnessing the possibilities of randomized data.</p>
+      <p>It's fun, funny, useful, and it aims to improve your life by the tiniest margins...by improving the quality of your taco night.</p>
+      <p>If you really want to see how it's coming along, email me and I'll shoot you a link to the 'work in progress' version of the app.</p>
     </div>
 </template>
 
