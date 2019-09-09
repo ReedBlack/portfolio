@@ -1,7 +1,7 @@
 <template>
     <div>
       <h1 class="tacotext">About ¡taco taco!</h1>
-      <p>Check back soon! ¡taco taco! is my current passion project and my first major post-tech-education project. It aims to evolve the ways we conceive recipes by harnessing the possibilities of randomized data.</p>
+      <p>Check back soon. ¡taco taco! is my current passion project and my first major post-tech-education project. It aims to evolve the ways we conceive recipes by harnessing the possibilities of randomized data.</p>
       <p>It's fun, funny, useful, and it aims to improve your life by the tiniest margins...by improving the quality of your taco night.</p>
       <p>If you really want to see how it's coming along, email me and I'll shoot you a link to the 'work in progress' version of the app.</p>
     </div>

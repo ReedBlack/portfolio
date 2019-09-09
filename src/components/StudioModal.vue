@@ -1,8 +1,7 @@
 
 <template>
     <div>
-        <p class="silver">I played a critical role in the production of these tracks during my time as lead staff producer at Stonecutter. They range from full-blown beats to overseeing subtle instrumentation and effects.</p>
-        <small class="silver">All tracks recorded and produced at Stonecutter Recording Studios, Chicago, IL</small>
+        <p class="silver">I played a role in the production of these tracks during my time as lead staff producer at Stonecutter Records in Chicago, Il. The work I contributed to them ranges from the production of full-blown beats to the overseeing of subtle instrumentation and effects.</p>
         <AudioPlayer
              v-for="track in tracks"
              :title="track.title"
