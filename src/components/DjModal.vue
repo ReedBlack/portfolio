@@ -5,6 +5,7 @@
             :title="mix.title"
             :soundSource="mix.link"
             :date="mix.date"
+            :description="mix.description"
         />
     </div>
 </template>
@@ -21,14 +22,16 @@ export default {
     return {
       mixes: [
         {
-          title: "Ecstatic Dance Promo Mix",
+          title: "Rumble in the Jungle",
           link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Ecstatic+Dance+Sept+2019.m4a",
-          date: 'Sept 2019'
+          date: 'Sept 2019',
+          description: 'Imagined for the ecstatic dance format. Begins deep in the jungle and works its way up to the clouds.'
         },
         {
           title: "Yoga Mix",
           link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Feb2019YogaMix.m4a",
-          date: 'Feb 2019'
+          date: 'Feb 2019',
+          description: 'A textured Yoga journey.'
         },
         {
           title: "2016 Summer Lounge Promo Mix",
