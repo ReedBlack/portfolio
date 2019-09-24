@@ -5,6 +5,7 @@ import Music from './views/Music.vue'
 import Art from './views/Art.vue'
 import ArtConstruction from './views/ArtConstruction.vue'
 import Projects from './views/Projects.vue'
+import DjModal from './components/DjModal.vue'
 
 Vue.use(Router);
 
@@ -16,7 +17,13 @@ export default new Router({
   }, {
     path: '/Music',
     name: 'music',
-    component: Music
+    component: Music,
+    children: [
+      { path: '/Mixes',
+        component: DjModal,
+        name: 'djMixes'
+      }
+    ]
   }, {
     path: '/Projects',
     name: 'projects',
@@ -31,6 +38,11 @@ export default new Router({
     path: '/ArtConstruction',
     name: 'artConstruction',
     component: ArtConstruction
-  }
+  },
+  // {
+  //   path: '/Music/Mixes',
+  //   name: 'djMixes',
+  //   component: DjModal
+  // }
 ]
 })
