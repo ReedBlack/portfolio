@@ -5,7 +5,7 @@
             <br>
             <a href="https://www.linkedin.com/in/reed-black" target="blank"><i class="fab fa-linkedin" :class="theme"></i></a>
             <br>
-            <a href="https://www.soundcloud.com/ReedBlack" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
+            <a href="https://www.soundcloud.com/cielorhythms" target="blank"><i class="fab fa-soundcloud" :class="theme"></i></a>
         </nav>
         <div id="svg-container">
             <div class="smallbox">
