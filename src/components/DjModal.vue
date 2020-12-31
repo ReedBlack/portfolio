@@ -22,10 +22,14 @@ export default {
     return {
       mixes: [
         {
-          title: "Rumble in the Jungle",
-          link: "https://mixtap-mixes.s3-ap-southeast-1.amazonaws.com/Ecstatic+Dance+Sept+2019.m4a",
-          date: 'Sept 2019',
-          description: 'Imagined for the ecstatic dance format. Begins deep in the jungle and works its way up to the clouds.'
+          title: "Rhythm Sanctuary",
+          link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Rhythm+Sancutary+12_10_20.m4a",
+          date: 'Dec 2020',
+        },
+        {
+          title: "Sounds from the Stream",
+          link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Sounds+From+The+Stream+12.18.20.m4a",
+          date: 'Dec 2020'
         },
         {
           title: "Yoga Mix",
@@ -37,11 +41,6 @@ export default {
           title: "2016 Summer Lounge Promo Mix",
           link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Summer+2016+Lounge+Promo+Mix.m4a",
           date: 'June 2016',
-        },
-        {
-          title: "Yoga Mix",
-          link: "https://s3-ap-southeast-1.amazonaws.com/mixtap-mixes/Dec2017++Yoga+Mix.m4a",
-          date: 'Dec 2017'
         },
         {
           title: "@Punch House",
