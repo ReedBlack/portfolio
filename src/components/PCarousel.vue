@@ -69,17 +69,17 @@
                     />
                 </div>
             </slide>
-            <slide :index="4" id="taco" class="slide">
+            <slide :index="0" id="taco" class="slide">
                 <div class="hidebutton" v-b-modal.modal3>
                     <TitleSlide
-                        title="taco-taco"
-                        image="taco.png"
+                        title="taconinja"
+                        image="ninja-logo-small.png"
                         theme="lava"
-                        properties="lava spins"
+                        properties="lava"
                     />
                 </div>
             </slide>
-            <slide :index="0" id="inkswell" class="slide">
+            <slide :index="4" id="inkswell" class="slide">
                 <div class="hidebutton" v-b-modal.modal7>
                     <TitleSlide
                         title="inkswell"
@@ -171,6 +171,10 @@ export default {
     width: 100%;
     }
 }
+
+/*#taco {*/
+    /*margin-bottom: -20px;*/
+/*}*/
 
 #taco,
 #live,
