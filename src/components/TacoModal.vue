@@ -7,8 +7,8 @@
           Finally, it randomizes these components into a single tangible taco recipe that can then be converted to a pdf recipe document, or shared on social media.</p>
 
       <p>It's fun, funny, useful, and it aims to improve your life by the tiniest margins...by improving the quality of your taco night.</p>
-        <p>Check back soon. Tons of new recipes will be added, the algorithm will be tightened, and the experience will be streamlined. Anticipating launch in late Spring of 2021 at <b>taco.ninja</b></p>
-        <a href="https://taco-taco-stage.firebaseapp.com/#/" target="blank"><b-button >Live Stage/QA Site</b-button></a>
+        <p>Check back soon. While the site may be live to get early feedback, tons of new recipes will be added, the algorithm will be tightened, and the experience will be streamlined. Anticipating launch in late Spring of 2021 at <b>taco.ninja</b></p>
+        <a href="https://taco.ninja" target="blank"><b-button >Live Site</b-button></a>
     </div>
 </template>
 
